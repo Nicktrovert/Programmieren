@@ -72,9 +72,11 @@ public class CharacterGeneratorOverride {
         if (obj == null){
             return false;
         }
+
         if (obj == this){
             return true;
         }
+
         return this.hashCode() == obj.hashCode();
     }
 
