@@ -11,7 +11,8 @@ public class BlackjackGame {
     private BufferedReader br;
 
     public static void main(String[] args){
-
+        BlackjackGame b = new BlackjackGame();
+        b.playRound();
     }
 
     public BlackjackGame() {
@@ -51,7 +52,186 @@ public class BlackjackGame {
         return deck;
     }
 
-    public void playRound(){
+    public void initRound(){
+        playerHand = new ArrayList<>();
+        dealerHand = new ArrayList<>();
+        fullDeck = initDeck();
+        for (int i = 0; i < 2; i++){
+            PlayerDraw();
+            PrintPlayerHand();
+            DealerDraw();
+            PrintDealerHand(true);
+        }
+    }
 
+    public String CardArrayToString(ArrayList<Card> cards){
+        return CardArrayToString(cards, false);
+    }
+
+    public String CardArrayToString(ArrayList<Card> cards, boolean firstCardHidden){
+        StringBuilder out = new StringBuilder();
+        for (Card card : cards){
+            if (firstCardHidden){
+                out.append("[?]").append("\n");
+                firstCardHidden = false;
+            }
+            else{
+                out.append(card.toString()).append("\n");
+            }
+        }
+        return out.toString();
+    }
+
+    public void PrintPlayerHand(){
+        System.out.printf("Player Hand: \n%s\n", CardArrayToString(playerHand));
+    }
+
+    public void PrintDealerHand(boolean hideFirstCard){
+        System.out.printf("Dealer Hand: \n%s\n", CardArrayToString(dealerHand, hideFirstCard));
+    }
+
+    public Card PlayerDraw(){
+        Card card = GetTopCardFromDeck();
+        playerHand.addFirst(card);
+        System.out.println("Player drew a Card!");
+        return card;
+    }
+
+    public Card DealerDraw(){
+        Card card = GetTopCardFromDeck();
+        dealerHand.addFirst(card);
+        System.out.println("Dealer drew a Card!");
+        return card;
+    }
+
+    public ArrayList<Card> GetCardsFromDeck(int amount){
+        ArrayList<Card> cards = new ArrayList<Card>();
+
+        for (int i = 0; i < amount; i++){
+            cards.addFirst(GetTopCardFromDeck());
+        }
+
+        return cards;
+    }
+
+    public Card GetTopCardFromDeck(){
+        return fullDeck.removeLast();
+    }
+
+    public int PlayerTurn() {
+        System.out.printf("Player Turn: \nCurrent Hand: \n%s\n\tWhat do you want to do?\n\t\t(1) Hit  [Draw another card]\n\t\t(2) Stand  [Stop turn]\n\n", CardArrayToString(playerHand));
+        String input = readFromConsole("Your choice: ");
+
+        if (input.equals("1")){
+            PlayerDraw();
+            PrintPlayerHand();
+            return CheckPlayerState();
+        }
+        else if (input.equals("2")){
+            System.out.println("Player standing!");
+            return -1;
+        }
+        else {
+            System.out.println("\nInvalid choice. Try again.\n");
+        }
+
+        return 0;
+    }
+
+    public int CardsTotalSum(ArrayList<Card> cards) {
+        int sum = 0;
+        for (Card card : cards){
+            sum += card.getValue();
+        }
+        return sum;
+    }
+
+    public int CheckPlayerState(){
+        int value = CardsTotalSum(playerHand);
+        if (value == 21){
+            System.out.println("Player reached max Value, Dealers turn.");
+            return -1;
+        }
+        if (value > 21){
+            System.out.println("Player busted!");
+            return 1;
+        }
+        return 0;
+    }
+
+    public int DealerTurn(){
+        System.out.printf("Dealer Turn: \nCurrent Hand: \n%s\n", CardArrayToString(dealerHand, false));
+
+        int totalSum = CardsTotalSum(dealerHand);
+        if (totalSum < 17){
+            DealerDraw();
+            PrintDealerHand(false);
+            return CheckDealerState();
+        }
+        else {
+            System.out.println("Dealer Standing.");
+            return -1;
+        }
+    }
+
+    public int CheckDealerState(){
+        int value = CardsTotalSum(dealerHand);
+        if (value == 21){
+            System.out.println("Dealer reached max Value.");
+            return -1;
+        }
+        if (value > 21){
+            System.out.println("Dealer busted!");
+            return 1;
+        }
+        return 0;
+    }
+
+    public void GetGameResult(){
+        int playerSum = CardsTotalSum(playerHand);
+        int dealerSum = CardsTotalSum(dealerHand);
+        if (playerSum > 21){
+            System.out.println("Dealer Won! Player busted.");
+        }
+        else if (dealerSum > 21){
+            System.out.println("Player Won! Dealer busted.");
+        }
+        else if (playerSum == dealerSum){
+            System.out.println("Dealer Won! Draw.");
+        }
+        else if (playerSum > dealerSum){
+            System.out.println("Player Won!");
+        }
+        else {
+            System.out.println("Dealer Won!");
+        }
+    }
+
+    public void playRound(){
+        initRound();
+        int RoundStep = 0;
+        while (RoundStep < 3){
+            switch (RoundStep) {
+                case 0:
+                    int i = PlayerTurn();
+                    if (i == -1){
+                        RoundStep++;
+                    }
+                    if (i == 1){
+                        RoundStep = 2;
+                    }
+                    break;
+                case 1:
+                    int j = DealerTurn();
+                    if (j != 0){
+                        RoundStep++;
+                    }
+                    break;
+                case 2:
+                    GetGameResult();
+                    RoundStep++;
+                    break;
+            }
+        }
     }
 }
