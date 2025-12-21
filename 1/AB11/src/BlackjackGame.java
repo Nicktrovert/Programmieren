@@ -53,8 +53,8 @@ public class BlackjackGame {
     }
 
     public void initRound(){
-        playerHand = new ArrayList<>();
-        dealerHand = new ArrayList<>();
+        playerHand = new ArrayList<Card>();
+        dealerHand = new ArrayList<Card>();
         fullDeck = initDeck();
         for (int i = 0; i < 2; i++){
             PlayerDraw();
