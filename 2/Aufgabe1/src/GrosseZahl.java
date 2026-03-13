@@ -1,5 +1,6 @@
 public class GrosseZahl {
     int[] _data;
+    public static GrosseZahl ONE = new GrosseZahl(1);
 
     public GrosseZahl(String d){
         _data = new int[d.length()];
@@ -42,10 +43,15 @@ public class GrosseZahl {
         return null;
     }
 
-    public GrosseZahl mult(GrosseZahl b){ //todo (nick)
-        // todo : implement
+    public GrosseZahl mult(GrosseZahl b) throws CloneNotSupportedException {
+        GrosseZahl self = (GrosseZahl) this.clone();
 
-        return null;
+        while(!b.less(GrosseZahl.ONE)){
+            b.sub(GrosseZahl.ONE);
+            self.add(this);
+        }
+
+        return self;
     }
 
     public GrosseZahl ggT(GrosseZahl b) throws CloneNotSupportedException {
@@ -57,7 +63,7 @@ public class GrosseZahl {
     private GrosseZahl ggT_recursive(GrosseZahl a, GrosseZahl b) {
         GrosseZahl leftover = ggT_recursive_findLeftover(a, b);
 
-        if (leftover.less(new GrosseZahl(1))){
+        if (leftover.less(GrosseZahl.ONE)) {
             return b;
         }
 
