@@ -26,8 +26,10 @@ public class GrosseZahl {
         //toString() test (Works) [requires Constructor to function]
         System.out.println(test.toString());
         System.out.println(test2.toString());
-        //ggT test (can't test yet) [requires toString() to function]
+        //ggT test (can't test yet) [requires toString(), less(), sub() to function]
         //System.out.println(ggT(test, test2).toString());
+        //mult test (can't test yet) [requires add(), toString() to function]
+        //System.out.println(test.mult(test2).toString());
         //todo : other tests
     }
 
