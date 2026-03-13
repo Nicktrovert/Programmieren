@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class GrosseZahl {
     int[] _data;
     public static GrosseZahl ONE = new GrosseZahl(1);
@@ -15,7 +17,18 @@ public class GrosseZahl {
     }
 
     public static void main(String[] args){
+        GrosseZahl test = new GrosseZahl("8295938");
+        GrosseZahl test2 = new GrosseZahl("258");
 
+        //Constructor test (Works)
+        System.out.println(Arrays.toString(test._data));
+        System.out.println(Arrays.toString(test2._data));
+        //toString() test (Works) [requires Constructor to function]
+        System.out.println(test.toString());
+        System.out.println(test2.toString());
+        //ggT test (can't test yet) [requires toString() to function]
+        //System.out.println(ggT(test, test2).toString());
+        //todo : other tests
     }
 
     public String toString(){
