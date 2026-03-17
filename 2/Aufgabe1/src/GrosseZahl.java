@@ -13,14 +13,14 @@ public class GrosseZahl {
     }
 
     public GrosseZahl(int d){
-        new GrosseZahl(Integer.toString(d));
+        this._data = new GrosseZahl(Integer.toString(d))._data;
     }
 
     private GrosseZahl(int[] digits) {
         _data = digits;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         GrosseZahl test = new GrosseZahl("8295938");
         GrosseZahl test2 = new GrosseZahl("258");
 
@@ -30,8 +30,17 @@ public class GrosseZahl {
         //toString() test (Works) [requires Constructor to function]
         System.out.println(test.toString());
         System.out.println(test2.toString());
-        //ggT test (can't test yet) [requires toString(), less(), sub() to function]
-        //System.out.println(ggT(test, test2).toString());
+
+        //reasign
+        test = new GrosseZahl("20");
+        test2 = new GrosseZahl("35");
+
+        //mult test [requires add(), toString() to function]
+        System.out.println(test.mult(test2).toString());
+
+        //ggT test [requires toString(), less(), sub() to function]
+        System.out.println(test.ggT(test2).toString());
+
         System.out.println("--- less() Tests ---");
         GrosseZahl small = new GrosseZahl("100");
         GrosseZahl large = new GrosseZahl("1000");
@@ -63,9 +72,6 @@ public class GrosseZahl {
         GrosseZahl diff2 = sub3.sub(sub4);
         System.out.println("1000 - 999 = " + diff2.toString() + " (erwartet: 1)");
         System.out.println();
-        //mult test (can't test yet) [requires add(), toString() to function]
-        //System.out.println(test.mult(test2).toString());
-        //todo : other tests
     }
 
     public String toString(){
@@ -134,19 +140,20 @@ public class GrosseZahl {
         return new GrosseZahl(trimmed);
     }
 
-    public GrosseZahl mult(GrosseZahl b) throws CloneNotSupportedException {
-        GrosseZahl self = (GrosseZahl) this.clone();
+    public GrosseZahl mult(GrosseZahl b) {
+        GrosseZahl self = new GrosseZahl(this._data);
 
         while(!b.less(GrosseZahl.ONE)){
-            b.sub(GrosseZahl.ONE);
-            self.add(this);
+            b = b.sub(GrosseZahl.ONE);
+            self = self.add(this);
         }
+        self = self.sub(this);
 
         return self;
     }
 
-    public GrosseZahl ggT(GrosseZahl b) throws CloneNotSupportedException {
-        GrosseZahl a = (GrosseZahl) this.clone();
+    public GrosseZahl ggT(GrosseZahl b) {
+        GrosseZahl a = new GrosseZahl(this._data);
 
         return ggT_recursive(a, b);
     }
