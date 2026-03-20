@@ -82,7 +82,7 @@ public class GrosseZahl {
         return sb.toString();
     }
 
-    public boolean less(GrosseZahl b){ //todo (gerrit)
+    public boolean less(GrosseZahl b){
         if (_data.length != b._data.length) {
             return _data.length < b._data.length;
         }
@@ -94,7 +94,7 @@ public class GrosseZahl {
         return false;
     }
 
-    public GrosseZahl add(GrosseZahl b){ //todo (gerrit)
+    public GrosseZahl add(GrosseZahl b){
         int lenA = _data.length;
         int lenB = b._data.length;
         int maxLen = Math.max(lenA, lenB);
@@ -115,7 +115,7 @@ public class GrosseZahl {
         return new GrosseZahl(trimmed);
     }
 
-    public GrosseZahl sub(GrosseZahl b){ //todo (gerrit)
+    public GrosseZahl sub(GrosseZahl b){
         int lenA = _data.length;
         int lenB = b._data.length;
         int[] result = new int[lenA];
