@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class GrosseZahl {
     int[] _data;
+
     public static GrosseZahl ONE = new GrosseZahl(1);
 
     public GrosseZahl(String d){
@@ -21,7 +22,7 @@ public class GrosseZahl {
     }
 
     public static void main(String[] args) {
-        GrosseZahl test = new GrosseZahl("8295938");
+        /*GrosseZahl test = new GrosseZahl("8295938");
         GrosseZahl test2 = new GrosseZahl("258");
 
         //Constructor test (Works)
@@ -71,14 +72,16 @@ public class GrosseZahl {
         GrosseZahl sub4 = new GrosseZahl("999");
         GrosseZahl diff2 = sub3.sub(sub4);
         System.out.println("1000 - 999 = " + diff2.toString() + " (erwartet: 1)");
-        System.out.println();
+        System.out.println();*/
     }
 
     public String toString(){
         StringBuilder sb = new StringBuilder();
+
         for (int i = 0; i < _data.length; i++){
             sb.append(_data[i]);
         }
+
         return sb.toString();
     }
 
@@ -86,57 +89,79 @@ public class GrosseZahl {
         if (_data.length != b._data.length) {
             return _data.length < b._data.length;
         }
+
         for (int i = 0; i < _data.length; i++) {
             if (_data[i] != b._data[i]) {
                 return _data[i] < b._data[i];
             }
         }
+
         return false;
     }
 
     public GrosseZahl add(GrosseZahl b){
         int lenA = _data.length;
         int lenB = b._data.length;
+
         int maxLen = Math.max(lenA, lenB);
+
         int[] result = new int[maxLen + 1];
+
         int carry = 0;
+
         for (int i = 0; i < maxLen || carry > 0; i++) {
             int sum = carry;
+
             if (i < lenA) sum += _data[lenA - 1 - i];
             if (i < lenB) sum += b._data[lenB - 1 - i];
+
             result[result.length - 1 - i] = sum % 10;
+
             carry = sum / 10;
         }
+
         int start = 0;
+
         while (start < result.length - 1 && result[start] == 0) {
             start++;
         }
+
         int[] trimmed = Arrays.copyOfRange(result, start, result.length);
+
         return new GrosseZahl(trimmed);
     }
 
     public GrosseZahl sub(GrosseZahl b){
         int lenA = _data.length;
         int lenB = b._data.length;
+
         int[] result = new int[lenA];
+
         int borrow = 0;
+
         for (int i = 0; i < lenA; i++) {
             int aDigit = _data[lenA - 1 - i];
             int bDigit = (i < lenB) ? b._data[lenB - 1 - i] : 0;
+
             int diff = aDigit - bDigit - borrow;
+
             if (diff < 0) {
                 diff += 10;
                 borrow = 1;
             } else {
                 borrow = 0;
             }
+
             result[lenA - 1 - i] = diff;
         }
+
         int start = 0;
         while (start < result.length - 1 && result[start] == 0) {
             start++;
         }
+
         int[] trimmed = Arrays.copyOfRange(result, start, result.length);
+
         return new GrosseZahl(trimmed);
     }
 
@@ -147,6 +172,7 @@ public class GrosseZahl {
             b = b.sub(GrosseZahl.ONE);
             self = self.add(this);
         }
+
         self = self.sub(this);
 
         return self;
