@@ -141,7 +141,13 @@ public class GrosseZahl {
 
         for (int i = 0; i < lenA; i++) {
             int aDigit = _data[lenA - 1 - i];
-            int bDigit = (i < lenB) ? b._data[lenB - 1 - i] : 0;
+            int bDigit;
+
+            if (i < lenB) {
+                bDigit = b._data[lenB - 1 - i];
+            } else {
+                bDigit = 0;
+            }
 
             int diff = aDigit - bDigit - borrow;
 
