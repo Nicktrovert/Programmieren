@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class CharCollection {
@@ -77,5 +78,48 @@ public class CharCollection {
         return sb.toString();
     }
 
-    // todo
+    public boolean equals(Object x){
+        if (x.getClass().isArray()){
+
+        }
+        // todo ??? compare classes somehow
+        switch (x.getClass()){
+
+        }
+    }
+
+    public CharCollection except(CharCollection cc){
+        CharCollection newC = this.clone();
+
+        for (char c : cc.Chars){
+            if (newC.Chars.contains(c))
+                newC.Chars.remove(c);
+        }
+
+        return newC;
+    }
+
+    public boolean isSubset(CharCollection cc){
+        CharCollection copyThis = this.clone();
+
+        for (char c : cc.Chars){
+            if (copyThis.Chars.contains(c))
+                copyThis.Chars.remove(c);
+            else
+                return false;
+        }
+
+        return true;
+    }
+
+    public CharCollection clone() {
+        CharCollection charCollection = null;
+        try {
+            charCollection = (CharCollection) super.clone();
+        } catch (Exception e){
+            charCollection = new CharCollection();
+        }
+        charCollection.Chars = (ArrayList<Character>) this.Chars.clone();
+        return charCollection;
+    }
 }
