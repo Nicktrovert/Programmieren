@@ -53,6 +53,7 @@ public class CharCollection {
             if (checked.contains(c)) {continue;}
 
             int count = count(c);
+            checked.add(c);
 
             if (count > most_count){
                 most = c;
