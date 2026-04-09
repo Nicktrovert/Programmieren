@@ -1,5 +1,8 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 public class CharCollection {
     public ArrayList<Character> Chars;
@@ -79,11 +82,33 @@ public class CharCollection {
     }
 
     public boolean equals(Object x){
-        if (x.getClass().isArray()){
+        if (this.getClass() == x.getClass()){
+            CharCollection formedX = (CharCollection) x;
+
+            if (formedX.size() != this.size()){
+                return false;
+            }
+
+            if (formedX.isSubset(this) || this.isSubset(formedX)){
+                return true;
+            }
+        }
+        else {
+            ArrayList<?> listX = getObjectAsCollection(x);
+            if (listX.size() == this.size()){
+                return false;
+            }
+        }
+    }
+
+    private ArrayList<?> getObjectAsCollection(Object x){
+        if (x instanceof List<?> formed){
+            return new ArrayList<>(formed);
+        }
+        else if (x instanceof Map<?,?> formed){
 
         }
-        // todo ??? compare classes somehow
-        switch (x.getClass()){
+        else if (x instanceof Collection<?> formed){
 
         }
     }
