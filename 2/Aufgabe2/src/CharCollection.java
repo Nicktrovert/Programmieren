@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -79,6 +78,12 @@ public class CharCollection {
         sb.delete(sb.length()-2, sb.length());
 
         return sb.toString();
+    }
+
+    public CharCollection moreThan(int m){
+
+
+
     }
 
     public boolean equals(Object x){
