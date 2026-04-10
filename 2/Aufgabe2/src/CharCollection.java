@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CharCollection {
-    public ArrayList<Character> Chars;
+    public List<Character> Chars;
 
     public CharCollection(char... cc){
         Chars = new ArrayList<>();
@@ -35,7 +35,7 @@ public class CharCollection {
     }
 
     public int different(){
-        ArrayList<Character> seen = new ArrayList<>();
+        List<Character> seen = new ArrayList<>();
         int counter = 0;
 
         for (char c : Chars){
@@ -49,7 +49,7 @@ public class CharCollection {
     }
 
     public char top(){
-        ArrayList<Character> checked = new ArrayList<>();
+        List<Character> checked = new ArrayList<>();
         char most = '0';
         int most_count = 0;
 
@@ -90,7 +90,7 @@ public class CharCollection {
     }
 
     public CharCollection moreThan(int m){
-        ArrayList<Character> checked = new ArrayList<>();
+        List<Character> checked = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
 
         for (char c : Chars){
@@ -198,7 +198,7 @@ public class CharCollection {
         } catch (Exception e){
             charCollection = new CharCollection();
         }
-        charCollection.Chars = (ArrayList<Character>) this.Chars.clone();
+        charCollection.Chars = new ArrayList<>(this.Chars);
         return charCollection;
     }
 }
