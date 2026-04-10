@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3a6684d-0d6f-4637-b909-0012f2a8ec28" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/JUnit5.xml" afterDir="false" />
+    <list default="true" id="f3a6684d-0d6f-4637-b909-0012f2a8ec28" name="Changes" comment="finish 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2/Aufgabe2/src/CharCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe2/src/CharCollection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +76,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.build",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -135,7 +135,7 @@
       <workItem from="1774003483989" duration="5755000" />
       <workItem from="1775038677047" duration="2741000" />
       <workItem from="1775728363035" duration="1818000" />
-      <workItem from="1775808105479" duration="2196000" />
+      <workItem from="1775808105479" duration="3016000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <option name="closed" value="true" />
@@ -241,7 +241,23 @@
       <option name="project" value="LOCAL" />
       <updated>1775808991668</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="finish">
+      <option name="closed" value="true" />
+      <created>1775810390309</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1775810390309</updated>
+    </task>
+    <task id="LOCAL-00015" summary="finish 2">
+      <option name="closed" value="true" />
+      <created>1775810591076</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1775810591076</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +287,8 @@
     <MESSAGE value="." />
     <MESSAGE value="mid write push because bad habits make me happy and i dont wanna write" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="finish" />
+    <MESSAGE value="finish 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish 2" />
   </component>
 </project>

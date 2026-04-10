@@ -9,7 +9,8 @@ public class CharCollection {
     public CharCollection(char... cc){
         Chars = new ArrayList<>();
         for (char c : cc){
-            Chars.add(c);
+            if (Character.toUpperCase(c) >= 65 && Character.toUpperCase(c) <= 90)
+                Chars.add(Character.toUpperCase(c));
         }
     }
 
