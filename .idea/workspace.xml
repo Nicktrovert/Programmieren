@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3a6684d-0d6f-4637-b909-0012f2a8ec28" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/JUnit5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe2/src/CharCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe2/src/CharCollection.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nicktrovert&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nicktrovert/Programmieren.git&quot;,
+    &quot;accountId&quot;: &quot;1e7405cc-7637-4935-bc55-d1855639e168&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="360rffJ8HlHWKpt3yN0Iy7sCDSP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BlackjackGame.executor": "Run",
+    "Application.GrosseZahl.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.CharCollectionTest.executor": "Run",
+    "JUnit.GrosseZahlTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/PCUser/IdeaProjects/Programmieren/2/Aufgabe1/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PCUser\IdeaProjects\Programmieren\2\Aufgabe1\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PCUser\IdeaProjects\Programmieren\2\Aufgabe2\src" />
+      <recent name="C:\Users\PCUser\IdeaProjects\Programmieren\2\Aufgabe1\src" />
+      <recent name="C:\Users\PCUser\IdeaProjects\Programmieren\1" />
+      <recent name="C:\Users\PCUser\IdeaProjects\Programmieren\1\AB9\src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3a6684d-0d6f-4637-b909-0012f2a8ec28" name="Changes" comment="" />
+      <created>1764154434914</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764154434914</updated>
+      <workItem from="1764154436668" duration="262000" />
+      <workItem from="1764154881256" duration="2391000" />
+      <workItem from="1764159448294" duration="1375000" />
+      <workItem from="1764598305700" duration="1841000" />
+      <workItem from="1764666347203" duration="4885000" />
+      <workItem from="1765033633472" duration="97000" />
+      <workItem from="1765271052039" duration="5047000" />
+      <workItem from="1765366033652" duration="80000" />
+      <workItem from="1765444088267" duration="1508000" />
+      <workItem from="1765749818344" duration="299000" />
+      <workItem from="1765876291206" duration="2940000" />
+      <workItem from="1766045028562" duration="846000" />
+      <workItem from="1766354478028" duration="2579000" />
+      <workItem from="1766357183919" duration="242000" />
+      <workItem from="1766424169584" duration="576000" />
+      <workItem from="1767688136825" duration="1288000" />
+      <workItem from="1773398809734" duration="4609000" />
+      <workItem from="1774003483989" duration="5755000" />
+      <workItem from="1775038677047" duration="2741000" />
+      <workItem from="1775728363035" duration="1818000" />
+      <workItem from="1775808105479" duration="2196000" />
+    </task>
+    <task id="LOCAL-00001" summary="idk">
+      <option name="closed" value="true" />
+      <created>1765033714413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765033714413</updated>
+    </task>
+    <task id="LOCAL-00002" summary="idk">
+      <option name="closed" value="true" />
+      <created>1765750084208</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765750084208</updated>
+    </task>
+    <task id="LOCAL-00003" summary="bj not finished">
+      <option name="closed" value="true" />
+      <created>1765883349757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765883349757</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bj finished">
+      <option name="closed" value="true" />
+      <created>1766357068823</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766357068824</updated>
+    </task>
+    <task id="LOCAL-00005" summary="bj finished +1">
+      <option name="closed" value="true" />
+      <created>1766357277135</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1766357277135</updated>
+    </task>
+    <task id="LOCAL-00006" summary="GrosseZahl">
+      <option name="closed" value="true" />
+      <created>1773412106243</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773412106243</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test">
+      <option name="closed" value="true" />
+      <created>1774004298436</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1774004298437</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Spaces">
+      <option name="closed" value="true" />
+      <created>1774005801389</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1774005801389</updated>
+    </task>
+    <task id="LOCAL-00009" summary="New assignment">
+      <option name="closed" value="true" />
+      <created>1775039698328</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1775039698329</updated>
+    </task>
+    <task id="LOCAL-00010" summary="i created error, whoops">
+      <option name="closed" value="true" />
+      <created>1775040144854</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1775040144854</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".">
+      <option name="closed" value="true" />
+      <created>1775041428087</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1775041428087</updated>
+    </task>
+    <task id="LOCAL-00012" summary="mid write push because bad habits make me happy and i dont wanna write">
+      <option name="closed" value="true" />
+      <created>1775730183843</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1775730183843</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update">
+      <option name="closed" value="true" />
+      <created>1775808991668</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1775808991668</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="idk" />
+    <MESSAGE value="bj not finished" />
+    <MESSAGE value="bj finished" />
+    <MESSAGE value="bj finished +1" />
+    <MESSAGE value="GrosseZahl" />
+    <MESSAGE value="test" />
+    <MESSAGE value="Spaces" />
+    <MESSAGE value="New assignment" />
+    <MESSAGE value="i created error, whoops" />
+    <MESSAGE value="." />
+    <MESSAGE value="mid write push because bad habits make me happy and i dont wanna write" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+</project>
