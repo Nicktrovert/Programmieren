@@ -52,6 +52,10 @@ public class CharCollection {
         char most = '0';
         int most_count = 0;
 
+        if (this.Chars.isEmpty()){
+            return 0;
+        }
+
         for (char c : Chars){
             if (checked.contains(c)) {continue;}
 
@@ -69,24 +73,50 @@ public class CharCollection {
 
     public String toString(){
         StringBuilder sb = new StringBuilder();
+        sb.append("(");
 
         for (char c : Chars){
             sb.append(c);
             sb.append(", ");
         }
 
-        sb.delete(sb.length()-2, sb.length());
+        if (sb.length() > 1)
+            sb.delete(sb.length()-2, sb.length());
+
+        sb.append(")");
 
         return sb.toString();
     }
 
     public CharCollection moreThan(int m){
+        ArrayList<Character> checked = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
 
+        for (char c : Chars){
+            if (checked.contains(c))
+            {
+                if (sb.toString().indexOf(c) != -1){
+                    sb.append(c);
+                }
+                continue;
+            }
 
+            int count = count(c);
+            checked.add(c);
 
+            if (count > m){
+                sb.append(c);
+            }
+        }
+
+        return new CharCollection(sb.toString());
     }
 
     public boolean equals(Object x){
+        if (x == null){
+            return false;
+        }
+
         if (this.getClass() == x.getClass()){
             CharCollection formedX = (CharCollection) x;
 
@@ -99,23 +129,41 @@ public class CharCollection {
             }
         }
         else {
-            ArrayList<?> listX = getObjectAsCollection(x);
-            if (listX.size() == this.size()){
+            Object[] listX = getObjectAsCollection(x);
+            if (listX == null || listX.length != this.size()){
                 return false;
             }
+
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < listX.length; i++){
+                if (listX[i] instanceof Character){
+                    sb.append((Character) listX[i]);
+                }
+                else {
+                    return false;
+                }
+            }
+
+            CharCollection c = new CharCollection(sb.toString());
+            return equals(c);
         }
+
+        return false;
     }
 
-    private ArrayList<?> getObjectAsCollection(Object x){
+    private Object[] getObjectAsCollection(Object x){
         if (x instanceof List<?> formed){
-            return new ArrayList<>(formed);
+            return formed.toArray();
         }
         else if (x instanceof Map<?,?> formed){
-
+            return formed.values().toArray();
         }
         else if (x instanceof Collection<?> formed){
-
+            return formed.toArray();
         }
+
+        return  null;
     }
 
     public CharCollection except(CharCollection cc){
@@ -123,7 +171,7 @@ public class CharCollection {
 
         for (char c : cc.Chars){
             if (newC.Chars.contains(c))
-                newC.Chars.remove(c);
+                newC.Chars.remove(newC.Chars.indexOf(c));
         }
 
         return newC;
@@ -134,7 +182,7 @@ public class CharCollection {
 
         for (char c : cc.Chars){
             if (copyThis.Chars.contains(c))
-                copyThis.Chars.remove(c);
+                copyThis.Chars.remove(copyThis.Chars.indexOf(c));
             else
                 return false;
         }
