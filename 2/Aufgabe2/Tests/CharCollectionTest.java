@@ -8,13 +8,11 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 
-import org.junit.rules.TestName;
+import org.junit.*;
 import org.junit.rules.TestWatcher;
 import org.junit.rules.Timeout;
 import org.junit.runner.Description;
 import org.junit.runners.model.TestTimedOutException;
-
-import static org.junit.Assert.*;
 
 public class CharCollectionTest {
 
@@ -33,6 +31,7 @@ public class CharCollectionTest {
 		abrakadabra = new CharCollection("ABRAKADABRA"); // 7
 		wald = new CharCollection("WALD"); // 8
 		leer = new CharCollection(""); // 9
+
 		/*System.out.println(bananen.toString());
 		System.out.println(apfelstrudel.toString());
 		System.out.println(xyyzz.toString());
@@ -43,15 +42,14 @@ public class CharCollectionTest {
 		System.out.println(abrakadabra.toString());
 		System.out.println(wald.toString());
 		System.out.println(leer.toString());*/
-		
+
 	}
-	
-	
+
+
 	@Rule
 	public Timeout globalTimeout = Timeout.seconds(2);
 
-	@Rule
-	public TestName testnames = new TestName();
+
 
 	private static int counter = 1;
 
@@ -64,7 +62,7 @@ public class CharCollectionTest {
 					+ description.getMethodName() + "'...");
 			counter++;
 		}
-		
+
 		@Override
 		protected void finished(Description description) {
 			System.out.println("FINISHED TEST: " + description.getMethodName()
@@ -95,8 +93,8 @@ public class CharCollectionTest {
 
 	};
 
-	
-	
+
+
 
 	@Test
 	public void testSize() {
@@ -174,7 +172,7 @@ public class CharCollectionTest {
 		assertEquals("Rueckgabe sollte '(A, B, R, A, K, A, D, A, B, R, A)' sein", abrakadabra.toString(), "(A, B, R, A, K, A, D, A, B, R, A)");
 		assertEquals("Rueckgabe sollte '(W, A, L, D)' sein", wald.toString(), "(W, A, L, D)");
 		assertEquals("Rueckgabe sollte '()' sein", leer.toString(), "()");
-	
+
 	}
 
 	@Test
@@ -184,7 +182,7 @@ public class CharCollectionTest {
 		assertEquals("HOCHSCHULE moreThan(1): erwartet CCHHH", new CharCollection("HCHCH"), hochschule.moreThan(1));
 		assertEquals("AAAAAA moreThan(3): erwartet AAAAAA", new CharCollection("AAAAAA"), aaaaaa.moreThan(3));
 		assertEquals("APFELSTRUDEL moreThan(4): leer", new CharCollection(""), apfelstrudel.moreThan(4));
-		
+
 	}
 
 	@Test
@@ -200,10 +198,52 @@ public class CharCollectionTest {
 
 	@Test
 	public void testIsSubset() {
-		assertTrue("BANANEN ⊆ BANANEN", bananen.isSubset(new CharCollection("BANANEN")));
-		assertFalse("BANANEN ⊆ BANANEAA", bananen.isSubset(new CharCollection("BANANEAA")));
-		assertTrue("Leere Sammlung ist Teilmenge jeder Sammlung", xyyzz.isSubset(new CharCollection("")));
-		assertFalse("BANANEN ⊈ BANANEX", bananen.isSubset(new CharCollection("BANANEX")));
-		assertFalse("BANANEN ⊈ AAAAAAA", bananen.isSubset(new CharCollection("AAAAAAA")));
+		// Identische Sammlungen
+		assertTrue("BANANEN enthaelt BANANEN", bananen.isSubset(new CharCollection("BANANEN")));
+		assertTrue("Leere Sammlung enthaelt leere Sammlung", leer.isSubset(new CharCollection("")));
+		assertTrue("AAAAAA enthaelt AAAAAA", aaaaaa.isSubset(new CharCollection("AAAAAA")));
+
+		// Echte Teilmengen
+		assertTrue("BANANEN enthaelt NANEBA", bananen.isSubset(new CharCollection("NANEBA")));
+		assertTrue("BANANEN enthaelt BAN", bananen.isSubset(new CharCollection("BAN")));
+		assertTrue("BANANEN enthaelt NN", bananen.isSubset(new CharCollection("NN")));
+		assertTrue("BANANEN enthaelt AA", bananen.isSubset(new CharCollection("AA")));
+		assertTrue("ABRAKADABRA enthaelt ARKA", abrakadabra.isSubset(new CharCollection("ARKA")));
+		assertTrue("HOCHSCHULE enthaelt HCH", hochschule.isSubset(new CharCollection("HCH")));
+		assertTrue("WALD enthaelt W", wald.isSubset(new CharCollection("W")));
+		assertTrue("Jede Sammlung enthaelt die leere Sammlung", bananen.isSubset(new CharCollection("")));
+		assertTrue("Auch XYYZZ enthaelt die leere Sammlung", xyyzz.isSubset(new CharCollection("")));
+
+		// Reihenfolge darf egal sein
+		assertTrue("Reihenfolge spielt keine Rolle: TEST enthaelt TSET", test.isSubset(new CharCollection("TSET")));
+		assertTrue("Reihenfolge spielt keine Rolle: MOMENTUM enthaelt UMMO", momentum.isSubset(new CharCollection("UMMO")));
+
+		// Falsche Vielfachheiten
+		assertFalse("BANANEN enthaelt nicht AAA", bananen.isSubset(new CharCollection("AAA")));
+		assertFalse("TEST enthaelt nicht TTT", test.isSubset(new CharCollection("TTT")));
+		assertFalse("XYYZZ enthaelt nicht YYY", xyyzz.isSubset(new CharCollection("YYY")));
+		assertFalse("AAAAAA enthaelt nicht AAAAAAA", aaaaaa.isSubset(new CharCollection("AAAAAAA")));
+		assertFalse("ABRAKADABRA enthaelt nicht BBB", abrakadabra.isSubset(new CharCollection("BBB")));
+
+		// Fremde Buchstaben
+		assertFalse("BANANEN enthaelt nicht X", bananen.isSubset(new CharCollection("X")));
+		assertFalse("BANANEN enthaelt nicht BANANEX", bananen.isSubset(new CharCollection("BANANEX")));
+		assertFalse("WALD enthaelt nicht Z", wald.isSubset(new CharCollection("Z")));
+		assertFalse("Leere Sammlung enthaelt nicht A", leer.isSubset(new CharCollection("A")));
+
+		// Obermengen sind keine Teilmengen
+		assertFalse("BANANEN enthaelt nicht BANANENA", bananen.isSubset(new CharCollection("BANANENA")));
+		assertFalse("TEST enthaelt nicht TESTE", test.isSubset(new CharCollection("TESTE")));
+		assertFalse("WALD enthaelt nicht WALDW", wald.isSubset(new CharCollection("WALDW")));
+
+		// Gleiche Buchstabenmenge, aber ungueltige Anzahl
+		assertFalse("BANANEN enthaelt nicht AAAAAAA", bananen.isSubset(new CharCollection("AAAAAAA")));
+		assertFalse("HOCHSCHULE enthaelt nicht HHHH", hochschule.isSubset(new CharCollection("HHHH")));
+		assertFalse("MOMENTUM enthaelt nicht MMMM", momentum.isSubset(new CharCollection("MMMM")));
+
+		// Leere Sammlung nur Teilmenge von jeder Sammlung, aber enthaelt selbst nur leer
+		assertTrue("Leere Teilmenge in leer", leer.isSubset(new CharCollection("")));
+		assertFalse("Leere Sammlung enthaelt keine nichtleere Sammlung", leer.isSubset(new CharCollection("BAN")));
 	}
+
 }
