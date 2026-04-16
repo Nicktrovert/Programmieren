@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a326399-a59e-4d9a-832b-2bf39f8dacf5" name="Changes" comment="i maybe found an error that i didn't fix 🐼🤷‍♂️" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nicktrovert&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nicktrovert/Programmieren.git&quot;,
+    &quot;accountId&quot;: &quot;bd2f453d-693a-42a5-a7d9-b489908d6d22&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="36Tcq11rAMtVvT9Fv2m4fOk49ic" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GrosseZahl.executor": "Run",
+    "Application.Recursive.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a326399-a59e-4d9a-832b-2bf39f8dacf5" name="Changes" comment="" />
+      <created>1765034188894</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765034188894</updated>
+      <workItem from="1765034192293" duration="2163000" />
+      <workItem from="1765749821111" duration="1100000" />
+      <workItem from="1765828660540" duration="629000" />
+      <workItem from="1768216953278" duration="955000" />
+      <workItem from="1772727044659" duration="3730000" />
+      <workItem from="1773411557559" duration="3770000" />
+      <workItem from="1773784463741" duration="1672000" />
+    </task>
+    <task id="LOCAL-00001" summary="CharacterGeneratorOverride">
+      <option name="closed" value="true" />
+      <created>1765035783029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765035783029</updated>
+    </task>
+    <task id="LOCAL-00002" summary="♥">
+      <option name="closed" value="true" />
+      <created>1765750873019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765750873019</updated>
+    </task>
+    <task id="LOCAL-00003" summary="♥☻♥">
+      <option name="closed" value="true" />
+      <created>1773412234708</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773412234708</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ggT">
+      <option name="closed" value="true" />
+      <created>1773413031701</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773413031701</updated>
+    </task>
+    <task id="LOCAL-00005" summary="mult">
+      <option name="closed" value="true" />
+      <created>1773413392579</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773413392579</updated>
+    </task>
+    <task id="LOCAL-00006" summary="tests">
+      <option name="closed" value="true" />
+      <created>1773413603063</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773413603063</updated>
+    </task>
+    <task id="LOCAL-00007" summary="teststst">
+      <option name="closed" value="true" />
+      <created>1773416109229</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1773416109229</updated>
+    </task>
+    <task id="LOCAL-00008" summary="i maybe found an error that i didn't fix 🐼🤷‍♂️">
+      <option name="closed" value="true" />
+      <created>1773785920555</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773785920555</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CharacterGeneratorOverride" />
+    <MESSAGE value="♥" />
+    <MESSAGE value="♥☻♥" />
+    <MESSAGE value="ggT" />
+    <MESSAGE value="mult" />
+    <MESSAGE value="tests" />
+    <MESSAGE value="teststst" />
+    <MESSAGE value="i maybe found an error that i didn't fix ‍♂️" />
+    <option name="LAST_COMMIT_MESSAGE" value="i maybe found an error that i didn't fix ‍♂️" />
+  </component>
+</project>
