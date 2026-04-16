@@ -1,2 +1,5 @@
-public class TextFileFormatException {
+public class TextFileFormatException extends Exception {
+    public TextFileFormatException(String message) {
+        super(message);
+    }
 }

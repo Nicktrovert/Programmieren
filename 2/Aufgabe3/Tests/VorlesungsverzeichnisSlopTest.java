@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Testklasse für Vorlesungsverzeichnis.
  * Hinweis: Die Klasse Vorlesung und TextFileFormatException müssen existieren.
  */
-class VorlesungsverzeichnisSlopTest {
+class VorlesungsverzeichnisTest {
 
     @TempDir
     Path tempDir;
@@ -62,7 +62,13 @@ class VorlesungsverzeichnisSlopTest {
 
     @Test
     void testTitles() {
-        verzeichnis = new Vorlesungsverzeichnis(testDatei.getAbsolutePath());
+        try {
+            verzeichnis = new Vorlesungsverzeichnis(testDatei.getAbsolutePath());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (TextFileFormatException e) {
+            throw new RuntimeException(e);
+        }
         List<String> titel = verzeichnis.titles();
 
         assertNotNull(titel);
@@ -83,7 +89,7 @@ class VorlesungsverzeichnisSlopTest {
     }
 
     @Test
-    void testWorkaholics() {
+    void testWorkaholics() throws TextFileFormatException, IOException {
         verzeichnis = new Vorlesungsverzeichnis(testDatei.getAbsolutePath());
         Set<String> workaholics = verzeichnis.workaholics();
 
@@ -117,7 +123,7 @@ class VorlesungsverzeichnisSlopTest {
     // Um den Workaholic-Test zu validieren, müsste man die Testdaten anpassen.
     // Hier ist ein Test, der annimmt, wir hätten einen Dozenten mit 2 Vorlesungen.
     @Test
-    void testWorkaholicsWithMultipleCourses() throws IOException {
+    void testWorkaholicsWithMultipleCourses() throws IOException, TextFileFormatException {
         File multiFile = tempDir.resolve("multi.txt").toFile();
         try (FileWriter writer = new FileWriter(multiFile)) {
             writer.write("A:Vorlesung1:DozentA:10\n");
@@ -134,7 +140,7 @@ class VorlesungsverzeichnisSlopTest {
     }
 
     @Test
-    void testGroupToTitles() {
+    void testGroupToTitles() throws TextFileFormatException, IOException {
         verzeichnis = new Vorlesungsverzeichnis(testDatei.getAbsolutePath());
         Map<String, List<String>> map = verzeichnis.groupToTitles();
 
@@ -150,7 +156,7 @@ class VorlesungsverzeichnisSlopTest {
     }
 
     @Test
-    void testMultipleTitles() {
+    void testMultipleTitles() throws TextFileFormatException, IOException {
         verzeichnis = new Vorlesungsverzeichnis(testDatei.getAbsolutePath());
         Map<String, List<String>> map = verzeichnis.multipleTitles();
 
@@ -170,7 +176,7 @@ class VorlesungsverzeichnisSlopTest {
     }
 
     @Test
-    void testDescendingTitles() {
+    void testDescendingTitles() throws TextFileFormatException, IOException {
         verzeichnis = new Vorlesungsverzeichnis(testDatei.getAbsolutePath());
         List<String> titles = verzeichnis.descendingTitles();
 
