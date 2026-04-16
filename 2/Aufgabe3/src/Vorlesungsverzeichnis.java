@@ -37,49 +37,22 @@ public class Vorlesungsverzeichnis {
         }
     }
 
-    public Vorlesungsverzeichnis(String filename) throws IOException, TextFileFormatException {
+    public static List<List<String>> load(String filename) throws IOException {
+        List<List<String>> result = new ArrayList<List<String>>();
+        BufferedReader br = new BufferedReader(new FileReader(filename));
+        for (String line = br.readLine(); line != null; line = br.readLine())
+            result.add(Arrays.asList(line.split(":")));
+        br.close();
+        return result;
+    }
+
+    public Vorlesungsverzeichnis(String filename) throws IOException {
         this.vorlesungen = new HashSet<>();
 
-        if (filename == null || filename.trim().isEmpty()) {
-            throw new TextFileFormatException("Dateiname darf nicht leer sein");
-        }
+        List<List<String>> rawData = load(filename);
 
-        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
-            String line;
-            int lineNumber = 0;
-
-            while ((line = br.readLine()) != null) {
-                lineNumber++;
-
-                if (!line.trim().isEmpty()) {
-                    String[] parts = line.split(":");
-
-                    if (parts.length != 4) {
-                        throw new TextFileFormatException(
-                                "Zeile " + lineNumber + ": Formatfehler - erwartet 4 durch ':' getrennte Felder, gefunden " + parts.length
-                        );
-                    }
-
-                    try {
-                        String studiengruppe = parts[0].trim();
-                        String titel = parts[1].trim();
-                        String dozent = parts[2].trim();
-                        int teilnehmerzahl = Integer.parseInt(parts[3].trim());
-
-                        if (teilnehmerzahl < 0) {
-                            throw new TextFileFormatException(
-                                    "Zeile " + lineNumber + ": Teilnehmerzahl darf nicht negativ sein"
-                            );
-                        }
-
-                        vorlesungen.add(new Vorlesung(studiengruppe, titel, dozent, teilnehmerzahl));
-                    } catch (NumberFormatException e) {
-                        throw new TextFileFormatException(
-                                "Zeile " + lineNumber + ": Teilnehmerzahl '" + parts[3] + "' ist keine gültige Ganzzahl"
-                        );
-                    }
-                }
-            }
+        for (List<String> row : rawData) {
+            vorlesungen.add(new Vorlesung(row.get(0), row.get(1), row.get(2), Integer.parseInt(row.get(3))));
         }
     }
 
