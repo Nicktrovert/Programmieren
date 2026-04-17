@@ -18,7 +18,7 @@ public class Vorlesungsverzeichnis {
 
     public static void main(String[] args){
         try{
-            Vorlesungsverzeichnis v = new Vorlesungsverzeichnis("2/Aufgabe3/src/testfile.txt");
+            Vorlesungsverzeichnis v = new Vorlesungsverzeichnis("2\\Aufgabe3\\src\\testfile.txt");
             System.out.println("\n\n~~Titles: ~~");
             System.out.println(Arrays.toString(v.titles().toArray()));
             System.out.println("\n\n~~Workaholics: ~~");
@@ -46,7 +46,7 @@ public class Vorlesungsverzeichnis {
         for (line = br.readLine(); line != null; line = br.readLine()) {
             zeilenNummer++;
 
-            if (line.trim().isEmpty()) {
+            if (!line.trim().isEmpty()) {
                 String[] teile = line.split(":");
 
                 if (teile.length != 4) {
