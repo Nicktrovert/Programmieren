@@ -1,31 +1,30 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CharCollection {
-    public List<Character> Chars;
+    public List<Character> chars;
 
     public CharCollection(char... cc){
-        Chars = new ArrayList<>();
+        chars = new ArrayList<>();
         for (char c : cc){
             if (Character.toUpperCase(c) >= 65 && Character.toUpperCase(c) <= 90)
-                Chars.add(Character.toUpperCase(c));
+                chars.add(Character.toUpperCase(c));
         }
     }
 
     public CharCollection(String cc){
-        this.Chars = new CharCollection(cc.toCharArray()).Chars;
+        this.chars = new CharCollection(cc.toCharArray()).chars;
     }
 
     public int size(){
-        return Chars.size();
+        return chars.size();
     }
 
     public int count(char c){
         int amount = 0;
 
-        for (char i : Chars){
+        //Collections.frequency(chars,c);
+
+        for (char i : chars){
             if (i == c){
                 amount++;
             }
@@ -38,14 +37,16 @@ public class CharCollection {
         List<Character> seen = new ArrayList<>();
         int counter = 0;
 
-        for (char c : Chars){
-            if (seen.contains(c)) {continue;}
-
-            seen.add(c);
-            counter++;
+        for (char c : chars){
+            if (!seen.contains(c))
+            {
+                seen.add(c);
+                counter++;
+            }
         }
 
         return counter;
+        //return new HashSet<Character>(chars).size();
     }
 
     public char top(){
@@ -53,19 +54,19 @@ public class CharCollection {
         char most = '0';
         int most_count = 0;
 
-        if (this.Chars.isEmpty()){
+        if (this.chars.isEmpty()){
             return 0;
         }
 
-        for (char c : Chars){
-            if (checked.contains(c)) {continue;}
+        for (char c : chars){
+            if (!checked.contains(c)){
+                int count = count(c);
+                checked.add(c);
 
-            int count = count(c);
-            checked.add(c);
-
-            if (count > most_count){
-                most = c;
-                most_count = count;
+                if (count > most_count){
+                    most = c;
+                    most_count = count;
+                }
             }
         }
 
@@ -76,7 +77,7 @@ public class CharCollection {
         StringBuilder sb = new StringBuilder();
         sb.append("(");
 
-        for (char c : Chars){
+        for (char c : chars){
             sb.append(c);
             sb.append(", ");
         }
@@ -93,20 +94,20 @@ public class CharCollection {
         List<Character> checked = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
 
-        for (char c : Chars){
+        for (char c : chars){
             if (checked.contains(c))
             {
                 if (sb.toString().indexOf(c) != -1){
                     sb.append(c);
                 }
-                continue;
             }
+            else{
+                int count = count(c);
+                checked.add(c);
 
-            int count = count(c);
-            checked.add(c);
-
-            if (count > m){
-                sb.append(c);
+                if (count > m){
+                    sb.append(c);
+                }
             }
         }
 
@@ -170,9 +171,9 @@ public class CharCollection {
     public CharCollection except(CharCollection cc){
         CharCollection newC = this.clone();
 
-        for (char c : cc.Chars){
-            if (newC.Chars.contains(c))
-                newC.Chars.remove(newC.Chars.indexOf(c));
+        for (char c : cc.chars){
+            if (newC.chars.contains(c))
+                newC.chars.remove(newC.chars.indexOf(c));
         }
 
         return newC;
@@ -181,9 +182,9 @@ public class CharCollection {
     public boolean isSubset(CharCollection cc){
         CharCollection copyThis = this.clone();
 
-        for (char c : cc.Chars){
-            if (copyThis.Chars.contains(c))
-                copyThis.Chars.remove(copyThis.Chars.indexOf(c));
+        for (char c : cc.chars){
+            if (copyThis.chars.contains(c))
+                copyThis.chars.remove(copyThis.chars.indexOf(c));
             else
                 return false;
         }
@@ -198,7 +199,7 @@ public class CharCollection {
         } catch (Exception e){
             charCollection = new CharCollection();
         }
-        charCollection.Chars = new ArrayList<>(this.Chars);
+        charCollection.chars = new ArrayList<>(this.chars);
         return charCollection;
     }
 }
