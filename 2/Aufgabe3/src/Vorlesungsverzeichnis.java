@@ -37,16 +37,36 @@ public class Vorlesungsverzeichnis {
         }
     }
 
-    public static List<List<String>> load(String filename) throws IOException {
+    public static List<List<String>> load(String filename) throws IOException, TextFileFormatException {
         List<List<String>> result = new ArrayList<List<String>>();
         BufferedReader br = new BufferedReader(new FileReader(filename));
-        for (String line = br.readLine(); line != null; line = br.readLine())
-            result.add(Arrays.asList(line.split(":")));
+        String line;
+        int zeilenNummer = 0;
+
+        for (line = br.readLine(); line != null; line = br.readLine()) {
+            zeilenNummer++;
+
+            if (line.trim().isEmpty()) {
+                String[] teile = line.split(":");
+
+                if (teile.length != 4) {
+                    br.close();
+                    throw new TextFileFormatException("Formatfehler in Zeile " + zeilenNummer + ": Erwartet 4 Felder, gefunden " + teile.length + ". Inhalt: '" + line + "'");
+                }
+                try {
+                    Integer.parseInt(teile[3]);
+                } catch (NumberFormatException e) {
+                    br.close();
+                    throw new TextFileFormatException("Formatfehler in Zeile " + zeilenNummer + ": Teilnehmerzahl '" + teile[3] + "' ist keine gültige Zahl.");
+                }
+                result.add(Arrays.asList(teile));
+            }
+        }
         br.close();
         return result;
     }
 
-    public Vorlesungsverzeichnis(String filename) throws IOException {
+    public Vorlesungsverzeichnis(String filename) throws IOException, TextFileFormatException {
         this.vorlesungen = new HashSet<>();
 
         List<List<String>> rawData = load(filename);

@@ -30,11 +30,12 @@ public class Vorlesung {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Vorlesung)) return false;
+
         Vorlesung v = (Vorlesung) o;
-        return Objects.equals(studiengruppe, v.studiengruppe) &&
+        return teilnehmerzahl == v.teilnehmerzahl &&
+                Objects.equals(studiengruppe, v.studiengruppe) &&
                 Objects.equals(titel, v.titel) &&
-                Objects.equals(dozent, v.dozent) &&
-                teilnehmerzahl == v.teilnehmerzahl;
+                Objects.equals(dozent, v.dozent);
     }
 
     @Override
