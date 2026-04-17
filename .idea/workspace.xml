@@ -1,59 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc068ddb-561b-4e28-b7ab-28033aa4d628" name="Changes" comment="testt">
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe2/src/CharCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe2/src/CharCollection.java" afterDir="false" />
+    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="kinda bad">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe3/src/Vorlesung.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe3/src/Vorlesung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe3/src/Vorlesungsverzeichnis.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe3/src/Vorlesungsverzeichnis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;g3r30n&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nicktrovert/Programmieren.git&quot;,
+    &quot;accountId&quot;: &quot;1590ae67-3e16-4ad3-8965-2277f33ca917&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3CMX17i9DGgzvJlAwXEQHONo10c" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.All in Aufgabe2.executor": "Run",
-    "JUnit.CharCollectionTest.executor": "Run",
-    "full.screen.before.presentation.mode": "false",
+    "Application.Vorlesungsverzeichnis.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.VorlesungsverzeichnisSlopTest.executor": "Run",
+    "JUnit.VorlesungsverzeichnisTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "inlay.hints"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="All in Aufgabe2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Aufgabe2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.All in Aufgabe2" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="testt">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="" />
+      <created>1776196195597</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776196195597</updated>
+    </task>
+    <task id="LOCAL-00001" summary="terrible">
       <option name="closed" value="true" />
-      <created>1775818031289</created>
+      <created>1776329001244</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1775818031289</updated>
+      <updated>1776329001244</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="terrible">
+      <option name="closed" value="true" />
+      <created>1776329202245</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1776329202246</updated>
+    </task>
+    <task id="LOCAL-00003" summary="kinda bad">
+      <option name="closed" value="true" />
+      <created>1776377367494</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776377367494</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="testt" />
-    <option name="LAST_COMMIT_MESSAGE" value="testt" />
+    <MESSAGE value="terrible" />
+    <MESSAGE value="kinda bad" />
+    <option name="LAST_COMMIT_MESSAGE" value="kinda bad" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="TextFileFormatException" package="" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
