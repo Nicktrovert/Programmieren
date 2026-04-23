@@ -49,6 +49,13 @@ public class Vorlesungsverzeichnis {
             if (!line.trim().isEmpty()) {
                 String[] teile = line.split(":");
 
+                for (String teil : teile) {
+                    if (teil.trim().isEmpty()) {
+                        br.close();
+                        throw new TextFileFormatException("Formatfehler in Zeile " + zeilenNummer + ": Leeres Feld gefunden.");
+                    }
+                }
+
                 if (teile.length != 4) {
                     br.close();
                     throw new TextFileFormatException("Formatfehler in Zeile " + zeilenNummer + ": Erwartet 4 Felder, gefunden " + teile.length + ". Inhalt: '" + line + "'");

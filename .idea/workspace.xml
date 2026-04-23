@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="..">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe3/Tests/VorlesungsverzeichnisSlopTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe3/Tests/VorlesungsverzeichnisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe3/Tests/VorlesungsverzeichnisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe3/src/Vorlesungsverzeichnis.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe3/src/Vorlesungsverzeichnis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +52,14 @@
     &quot;JUnit.All in Programmieren.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.VorlesungsverzeichnisSlopTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.VorlesungsverzeichnisTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VorlesungsverzeichnisTest.testSingleLecture.executor&quot;: &quot;Run&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;1&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -70,6 +71,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="All in Programmieren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Programmieren" />
@@ -125,7 +131,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776377367494</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="..">
+      <option name="closed" value="true" />
+      <created>1776968636814</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776968636814</updated>
+    </task>
+    <task id="LOCAL-00005" summary="..">
+      <option name="closed" value="true" />
+      <created>1776968673743</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776968673743</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +156,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="terrible" />
     <MESSAGE value="kinda bad" />
-    <option name="LAST_COMMIT_MESSAGE" value="kinda bad" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
