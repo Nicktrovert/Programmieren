@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="final">
+    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="..">
+      <change afterPath="$PROJECT_DIR$/2/Aufgabe4/Aufgabe4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe3/Tests/VorlesungsverzeichnisSlopTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe3/src/Vorlesungsverzeichnis.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe3/src/Vorlesungsverzeichnis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Nicktrovert/Programmieren.git&quot;,
-    &quot;accountId&quot;: &quot;1e7405cc-7637-4935-bc55-d1855639e168&quot;
+    &quot;accountId&quot;: &quot;1590ae67-3e16-4ad3-8965-2277f33ca917&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -46,33 +46,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Vorlesungsverzeichnis.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.All in Programmieren.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VorlesungsverzeichnisSlopTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VorlesungsverzeichnisTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Vorlesungsverzeichnis.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in Programmieren.executor": "Run",
+    "JUnit.VorlesungsverzeichnisSlopTest.executor": "Run",
+    "JUnit.VorlesungsverzeichnisTest.executor": "Run",
+    "JUnit.VorlesungsverzeichnisTest.testSingleLecture.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "main",
+    "git.auto.fetch.suggestion.counter": "1",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/gereon/IdeaProjects/Programmieren/2/Aufgabe4/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.All in Programmieren">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="All in Programmieren" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Programmieren" />
       <option name="PACKAGE_NAME" value="" />
@@ -81,25 +89,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VorlesungsverzeichnisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Programmieren" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.VorlesungsverzeichnisTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Programmieren" />
-        <item itemvalue="JUnit.VorlesungsverzeichnisTest" />
       </list>
     </recent_temporary>
   </component>
@@ -118,8 +110,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1776196195597</updated>
-      <workItem from="1776786564736" duration="24000" />
-      <workItem from="1777017045700" duration="1206000" />
     </task>
     <task id="LOCAL-00001" summary="terrible">
       <option name="closed" value="true" />
@@ -145,15 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1776377367494</updated>
     </task>
-    <task id="LOCAL-00004" summary="final">
+    <task id="LOCAL-00004" summary="..">
       <option name="closed" value="true" />
-      <created>1776414835416</created>
+      <created>1776968636814</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1776414835416</updated>
+      <updated>1776968636814</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="..">
+      <option name="closed" value="true" />
+      <created>1776968673743</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776968673743</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,8 +160,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="terrible" />
     <MESSAGE value="kinda bad" />
-    <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -172,6 +170,11 @@
           <properties class="TextFileFormatException" package="" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2/Aufgabe4/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
