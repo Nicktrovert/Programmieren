@@ -53,6 +53,13 @@ public class Vorlesungsverzeichnis {
                     br.close();
                     throw new TextFileFormatException("Formatfehler in Zeile " + zeilenNummer + ": Erwartet 4 Felder, gefunden " + teile.length + ". Inhalt: '" + line + "'");
                 }
+
+                for (var s : teile){
+                    if (s.isEmpty()){
+                        throw new TextFileFormatException("Formatfehler in Zeile " + zeilenNummer + ": Eines der teile ist Leer");
+                    }
+                }
+
                 try {
                     Integer.parseInt(teile[3]);
                 } catch (NumberFormatException e) {
@@ -90,7 +97,9 @@ public class Vorlesungsverzeichnis {
         List<String> titles = new ArrayList<>();
 
         vorlesungen.forEach(vorlesung -> {
-            titles.add(vorlesung.getTitel());
+            if (!titles.contains(vorlesung.getTitel())){
+                titles.add(vorlesung.getTitel());
+            }
         });
 
         Collections.sort(titles);
@@ -170,6 +179,10 @@ public class Vorlesungsverzeichnis {
 
     public Map<String, List<String>> multipleTitles() {
         Map<String, List<String>> multipleTitles = new HashMap<>();
+
+        if (vorlesungen.size() < 2){
+            return multipleTitles;
+        }
 
         vorlesungen.forEach(vorlesung -> {
             String title = vorlesung.getTitel();
