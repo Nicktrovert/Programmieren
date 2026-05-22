@@ -6,9 +6,9 @@ public class ModulesGetters {
         List<Modul> modulesOfCourse = new ArrayList<>();
 
         for (Modul m : modules){
-            if (m.studiengang == studiengang){
+            /*if (m.studiengang == studiengang){
                 modulesOfCourse.add(m);
-            }
+            }*/
         }
 
         return modulesOfCourse;

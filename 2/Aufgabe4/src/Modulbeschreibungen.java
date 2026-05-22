@@ -1,29 +1,24 @@
-import javax.script.Bindings;
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.lang.reflect.*;
+import java.util.*;
 
 public class Modulbeschreibungen {
     List<Modul> modules = new ArrayList<>();
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ScriptException, IllegalAccessException {
         Modulbeschreibungen modB = new Modulbeschreibungen("2/Aufgabe4/src/textFile.txt");
-        System.out.println(Arrays.toString(modB.modules.toArray()));
+        System.out.println(modB.getJSON("studiengang"));
     }
 
     public Modulbeschreibungen(String filename) throws IOException {
         List<List<String>> data = loadFile(filename);
 
-        for (int i = 0; i < data.size(); i+=0){
+        for (int i = 0; i < data.size(); i++){
             List<List<String>> moduleData = new ArrayList<>();
-            while (!data.get(i).isEmpty() || !data.get(i).get(0).isEmpty()){
+            while ((!data.get(i).isEmpty() || !data.get(i).get(0).isEmpty()) && i < data.size()-1){
                 moduleData.add(data.get(0));
                 i++;
             }
@@ -38,6 +33,9 @@ public class Modulbeschreibungen {
         List<List<String>> result = new ArrayList<List<String>>();
         BufferedReader br = new BufferedReader(new FileReader(filename));
         for (String line = br.readLine(); line != null; line = br.readLine()) {
+            if (!line.isEmpty() && line.charAt(0) == '#'){
+                continue;
+            }
             result.add(Arrays.asList(line.split("|")));
         }
         br.close();
@@ -50,12 +48,19 @@ public class Modulbeschreibungen {
         return null;
     }
 
-    /* liefert die Modulbeschreibungen eines Studiengangs im JSON-Format.*/
-    public String getJSON(String studiengang) throws ScriptException {
+    public String getJSON(String studiengang) throws ScriptException, IllegalAccessException {
         List<Modul> chosenModules = ModulesGetters.getByCourse(modules, studiengang);
+        StringBuilder sb = new StringBuilder();
 
-        Modul.class.getModule()
+        sb.append("[");
+        for (int i = 0; i < chosenModules.size(); i++){
+            sb.append(Jsonizer.jsonizeFields((Object)chosenModules.get(i)));
+            if (i != chosenModules.size()-1){
+                sb.append(", ");
+            }
+        }
+        sb.append("]\n");
 
-        return "";
+        return sb.toString();
     }
 }
