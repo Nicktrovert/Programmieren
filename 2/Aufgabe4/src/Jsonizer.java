@@ -11,6 +11,7 @@ public class Jsonizer {
         StringBuilder sb = new StringBuilder();
         sb.append("{\n");
 
+        int j = 0;
         for (Field field : fields){
             field.setAccessible(true);
             Object value = field.get(m);
@@ -25,9 +26,13 @@ public class Jsonizer {
                     sb.deleteCharAt(sb.length()-(2+getTabsForDepth(depth+1).length()+1));
                     if (i != collection.size()-1){
                         sb.append(", ");
-                    }
+                    } 
                     else{
-                        sb.append("]\n");
+                        if (j == fields.length-1){
+                            sb.append("]\n");
+                        } else {
+                            sb.append("],\n");
+                        }
                     }
                     i++;
                 }
@@ -37,6 +42,7 @@ public class Jsonizer {
                 sb.append("\"" + field.getName() + "\": \"" + field.get(m).toString() + "\",\n");
             }
 
+            j++;
         }
 
         sb.append(getTabsForDepth(depth) + "}");
