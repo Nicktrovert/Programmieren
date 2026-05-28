@@ -1,12 +1,28 @@
 import java.lang.reflect.Field;
 import java.util.Collection;
+import java.util.List;
 
 public class Jsonizer {
-    public static String jsonizeFields(Object m) throws IllegalAccessException {
-        return jsonizeFields(m, 0);
+    public static String jsonizeList(List<?> data) throws IllegalAccessException {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("[");
+        for (int i = 0; i < data.size(); i++){
+            sb.append(Jsonizer.jsonizeObject(data.get(i)));
+            if (i != data.size()-1){
+                sb.append(", ");
+            }
+        }
+        sb.append("]\n");
+
+        return sb.toString();
     }
 
-    private static String jsonizeFields(Object m, int depth) throws IllegalAccessException {
+    public static String jsonizeObject(Object m) throws IllegalAccessException {
+        return jsonizeObject(m, 0);
+    }
+
+    private static String jsonizeObject(Object m, int depth) throws IllegalAccessException {
         Field[] fields = m.getClass().getDeclaredFields();
         StringBuilder sb = new StringBuilder();
         sb.append("{\n");
@@ -21,7 +37,7 @@ public class Jsonizer {
                 sb.append("\"" + field.getName() + "\": [");
                 int i = 0;
                 for (Object o : collection){
-                    String temp = jsonizeFields(o, depth+1);
+                    String temp = jsonizeObject(o, depth+1);
                     sb.append(temp);
                     sb.deleteCharAt(sb.length()-(2+getTabsForDepth(depth+1).length()+1));
                     if (i != collection.size()-1){

@@ -2,7 +2,6 @@ import javax.script.ScriptException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.*;
 import java.util.*;
 
 public class Modulbeschreibungen {
@@ -50,17 +49,6 @@ public class Modulbeschreibungen {
 
     public String getJSON(String studiengang) throws ScriptException, IllegalAccessException {
         List<Modul> chosenModules = ModulesGetters.getByCourse(modules, studiengang);
-        StringBuilder sb = new StringBuilder();
-
-        sb.append("[");
-        for (int i = 0; i < chosenModules.size(); i++){
-            sb.append(Jsonizer.jsonizeFields((Object)chosenModules.get(i)));
-            if (i != chosenModules.size()-1){
-                sb.append(", ");
-            }
-        }
-        sb.append("]\n");
-
-        return sb.toString();
+        return Jsonizer.jsonizeList(chosenModules);
     }
 }
