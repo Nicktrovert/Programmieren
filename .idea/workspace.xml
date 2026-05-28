@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="Probably correct">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JUnit5.xml" beforeDir="false" />
+    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="updddddateeeee2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe3/Tests/VorlesungsverzeichnisTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe4/src/Modul.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe4/src/Modul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe4/src/Jsonizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe4/src/Jsonizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2/Aufgabe4/src/Modulbeschreibungen.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe4/src/Modulbeschreibungen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe4/src/ModulesGetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe4/src/ModulesGetters.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,73 +31,73 @@
     &quot;assignee&quot;: &quot;g3r30n&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Nicktrovert/Programmieren.git&quot;,
-    &quot;accountId&quot;: &quot;1590ae67-3e16-4ad3-8965-2277f33ca917&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Nicktrovert/Programmieren.git",
+    "accountId": "bd2f453d-693a-42a5-a7d9-b489908d6d22"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000002107" />
-      <entry key="S2" value="1.0008273388526963" />
-      <entry key="S5" value="1.0920778720324533" />
-      <entry key="S10" value="1.498215621118049" />
-      <entry key="S30" value="2.6464268425739883" />
-      <entry key="S60" value="4.27304349789862" />
-      <entry key="M2" value="12.798032354624969" />
-      <entry key="M5" value="47.28363867554869" />
-      <entry key="M10" value="92.8142053897664" />
-      <entry key="M15" value="123.50138634822186" />
-      <entry key="M30" value="171.7618219598961" />
-      <entry key="H1" value="206.5486510323713" />
-      <entry key="H2" value="227.718828755298" />
-      <entry key="H4" value="239.4382062636153" />
-      <entry key="D1" value="249.84487875508418" />
-      <entry key="W1" value="251.6905789589362" />
+      <entry key="MS100" value="1.4993299295820556E-51" />
+      <entry key="MS500" value="1.1280850121234895E-10" />
+      <entry key="S2" value="0.005464931394435845" />
+      <entry key="S5" value="0.18860462275858597" />
+      <entry key="S10" value="0.61574832409822" />
+      <entry key="S30" value="1.5349517085987798" />
+      <entry key="S60" value="2.252073004258232" />
+      <entry key="M2" value="2.916513679115026" />
+      <entry key="M5" value="3.5018163038107386" />
+      <entry key="M10" value="4.361397883992521" />
+      <entry key="M15" value="8.22323514250419" />
+      <entry key="M30" value="36.33565482337356" />
+      <entry key="H1" value="93.69886655644953" />
+      <entry key="H2" value="154.08092992940146" />
+      <entry key="H4" value="198.38567583920883" />
+      <entry key="D1" value="245.31431254211856" />
+      <entry key="W1" value="254.44458092847063" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.5040069192833884E-11" />
-      <entry key="MS500" value="0.008525499039491678" />
-      <entry key="S2" value="0.30386449113693764" />
-      <entry key="S5" value="0.6209719470404671" />
-      <entry key="S10" value="0.7880177387913906" />
-      <entry key="S30" value="0.9281981505717347" />
-      <entry key="S60" value="1.1414180925648372" />
-      <entry key="M2" value="2.4934662610346954" />
-      <entry key="M5" value="9.732028151029123" />
-      <entry key="M10" value="22.303055776008474" />
-      <entry key="M15" value="31.607535023007074" />
-      <entry key="M30" value="46.69294021039029" />
-      <entry key="H1" value="57.670665081632976" />
-      <entry key="H2" value="64.35180799110519" />
-      <entry key="H4" value="68.04577785524333" />
-      <entry key="D1" value="71.32204320011081" />
-      <entry key="W1" value="71.90267420064161" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0000000000343865" />
+      <entry key="M5" value="1.0004405928876705" />
+      <entry key="M10" value="1.1500656982519675" />
+      <entry key="M15" value="2.1265107395305707" />
+      <entry key="M30" value="9.815025565580841" />
+      <entry key="H1" value="26.057696056026266" />
+      <entry key="H2" value="43.41835688191213" />
+      <entry key="H4" value="56.24560415555273" />
+      <entry key="D1" value="69.88741162131015" />
+      <entry key="W1" value="72.54679744150147" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.01120277537512365" />
-      <entry key="MS500" value="0.4072537815355977" />
-      <entry key="S2" value="0.8002932448793099" />
-      <entry key="S5" value="1.0470593278556517" />
-      <entry key="S10" value="1.6367187655945084" />
-      <entry key="S30" value="3.1853630936384265" />
-      <entry key="S60" value="5.178075313525786" />
-      <entry key="M2" value="15.138427780980733" />
-      <entry key="M5" value="56.889958341387185" />
-      <entry key="M10" value="114.9972230076325" />
-      <entry key="M15" value="155.00097239318117" />
-      <entry key="M30" value="218.37831689080437" />
-      <entry key="H1" value="264.1729427168829" />
-      <entry key="H2" value="292.0449702885441" />
-      <entry key="H4" value="307.47046513375665" />
-      <entry key="D1" value="321.16456738346915" />
-      <entry key="W1" value="323.59291422414185" />
+      <entry key="MS100" value="2.104527941443098E-7" />
+      <entry key="MS500" value="0.04619882606998496" />
+      <entry key="S2" value="0.46883341023283986" />
+      <entry key="S5" value="0.9204916130068682" />
+      <entry key="S10" value="1.4676884057520019" />
+      <entry key="S30" value="2.4809042316415773" />
+      <entry key="S60" value="3.2242599039694215" />
+      <entry key="M2" value="3.902382342351372" />
+      <entry key="M5" value="4.49653984318921" />
+      <entry key="M10" value="5.507789926497179" />
+      <entry key="M15" value="10.343985534575207" />
+      <entry key="M30" value="46.135290837741" />
+      <entry key="H1" value="119.73593440908422" />
+      <entry key="H2" value="197.48212878255674" />
+      <entry key="H4" value="254.62018424423505" />
+      <entry key="D1" value="315.19942999118" />
+      <entry key="W1" value="326.9910382583506" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -112,40 +109,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Modulbeschreibungen.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SomeTesting.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Vorlesungsverzeichnis.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.All in Aufgabe4.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in Programmieren.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VorlesungsverzeichnisSlopTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VorlesungsverzeichnisTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VorlesungsverzeichnisTest.testSingleLecture.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;1&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IntelliJ_Projects/Programmieren/2/Aufgabe4/Tests&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/gereon/IdeaProjects/Programmieren/2/Aufgabe4/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Modulbeschreibungen.executor": "Run",
+    "Application.SomeTesting.executor": "Run",
+    "Application.Vorlesungsverzeichnis.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in Aufgabe4.executor": "Run",
+    "JUnit.All in Programmieren.executor": "Run",
+    "JUnit.VorlesungsverzeichnisSlopTest.executor": "Run",
+    "JUnit.VorlesungsverzeichnisTest.executor": "Run",
+    "JUnit.VorlesungsverzeichnisTest.testSingleLecture.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "main",
+    "git.auto.fetch.suggestion.counter": "1",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/IntelliJ_Projects/Programmieren/2/Aufgabe4/Tests",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/gereon/IdeaProjects/Programmieren/2/Aufgabe4/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IntelliJ_Projects\Programmieren\2\Aufgabe4\Tests" />
@@ -189,8 +189,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
       </set>
     </attachedChunks>
   </component>
@@ -201,6 +201,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1776196195597</updated>
+      <workItem from="1779990796125" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="terrible">
       <option name="closed" value="true" />
@@ -258,7 +259,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779982778524</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updddddateeeee">
+      <option name="closed" value="true" />
+      <created>1779987588504</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1779987588504</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updddddateeeee2">
+      <option name="closed" value="true" />
+      <created>1779987668173</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1779987668173</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +298,9 @@
     <MESSAGE value=".." />
     <MESSAGE value="Json Improvement" />
     <MESSAGE value="Probably correct" />
-    <option name="LAST_COMMIT_MESSAGE" value="Probably correct" />
+    <MESSAGE value="updddddateeeee" />
+    <MESSAGE value="updddddateeeee2" />
+    <option name="LAST_COMMIT_MESSAGE" value="updddddateeeee2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -137,7 +137,7 @@ public class Modulbeschreibungen {
         return null;
     }
 
-    public String getJSON(String studiengang) throws ScriptException, IllegalAccessException {
+    public String getJSON(String studiengang) {
         List<Modul> chosenModules = ModulesGetters.getByCourse(modules, studiengang);
         return Jsonizer.jsonizeList(chosenModules);
     }

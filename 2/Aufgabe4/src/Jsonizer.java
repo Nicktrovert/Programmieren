@@ -3,14 +3,18 @@ import java.util.Collection;
 import java.util.List;
 
 public class Jsonizer {
-    public static String jsonizeList(List<?> data) throws IllegalAccessException {
+    public static String jsonizeList(List<?> data) {
         StringBuilder sb = new StringBuilder();
 
         sb.append("[");
         for (int i = 0; i < data.size(); i++){
-            sb.append(Jsonizer.jsonizeObject(data.get(i)));
-            if (i != data.size()-1){
-                sb.append(", ");
+            try{
+                sb.append(Jsonizer.jsonizeObject(data.get(i)));
+                if (i != data.size()-1){
+                    sb.append(", ");
+                }
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
             }
         }
         sb.append("]\n");
