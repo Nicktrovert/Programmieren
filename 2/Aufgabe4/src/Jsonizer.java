@@ -3,13 +3,13 @@ import java.util.Collection;
 import java.util.List;
 
 public class Jsonizer {
-    public static String jsonizeList(List<?> data) {
+    public static String jsonizeList(Collection<?> data) {
         StringBuilder sb = new StringBuilder();
 
         sb.append("[");
         for (int i = 0; i < data.size(); i++){
             try{
-                sb.append(Jsonizer.jsonizeObject(data.get(i)));
+                sb.append(Jsonizer.jsonizeObject(data.toArray()[i]));
                 if (i != data.size()-1){
                     sb.append(", ");
                 }
@@ -38,34 +38,32 @@ public class Jsonizer {
 
             if (value instanceof Collection<?> collection){
                 sb.append(getTabsForDepth(depth, 1));
-                sb.append("\"" + field.getName() + "\": [");
-                int i = 0;
-                for (Object o : collection){
-                    String temp = jsonizeObject(o, depth+1);
-                    sb.append(temp);
-                    sb.deleteCharAt(sb.length()-(2+getTabsForDepth(depth+1).length()+1));
-                    if (i != collection.size()-1){
-                        sb.append(", ");
-                    } 
-                    else{
-                        if (j == fields.length-1){
-                            sb.append("]\n");
-                        } else {
-                            sb.append("],\n");
-                        }
-                    }
-                    i++;
+                sb.append("\"").append(field.getName()).append("\":");
+                sb.append(jsonizeList(collection));
+                if (j == fields.length-1){
+                    sb.append("\n");
+                } else {
+                    sb.append(",\n");
                 }
             }
             else{
                 sb.append(getTabsForDepth(depth, 1));
-                sb.append("\"" + field.getName() + "\": \"" + field.get(m).toString() + "\",\n");
+                Object obj = field.get(m);
+                if (obj instanceof Number){
+                    sb.append("\"").append(field.getName()).append("\": ").append(obj.toString()).append(",\n");
+                }
+                else if (obj instanceof String){
+                    sb.append("\"").append(field.getName()).append("\": \"").append(obj.toString()).append("\",\n");
+                }
+                else {
+                    sb.append("\"").append(field.getName()).append("\": \"").append(jsonizeObject(obj, depth + 1)).append("\",\n");
+                }
             }
 
             j++;
         }
 
-        sb.append(getTabsForDepth(depth) + "}");
+        sb.append(getTabsForDepth(depth)).append("}");
 
         return sb.toString();
     }
