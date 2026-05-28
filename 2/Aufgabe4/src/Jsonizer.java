@@ -56,7 +56,7 @@ public class Jsonizer {
                     sb.append("\"").append(field.getName()).append("\": \"").append(obj.toString()).append("\",\n");
                 }
                 else {
-                    sb.append("\"").append(field.getName()).append("\": \"").append(jsonizeObject(obj, depth + 1)).append("\",\n");
+                    sb.append("\"").append(field.getName()).append("\": ").append(jsonizeObject(obj, depth + 1)).append(",\n");
                 }
             }
 
