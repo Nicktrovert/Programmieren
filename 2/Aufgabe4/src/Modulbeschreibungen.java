@@ -122,19 +122,110 @@ public class Modulbeschreibungen {
         return SWS;
     }
     public Set<String> getVerzahnteModule() {
-        return null;
+        Set<String> verzahnte = new TreeSet<>();
+        Map<String, List<Modul>> map = new HashMap<>();
+
+        for (Modul m : modules) {
+            String key = m.getBezeichnung() + "|" + m.getVerantwortlicher() + "|" + getKuerzelBasis(m.getKuerzel());
+
+            if (!map.containsKey(key)) {
+                map.put(key, new ArrayList<>());
+            }
+            map.get(key).add(m);
+        }
+
+        for (List<Modul> group : map.values()) {
+            if (group.size() > 1) {
+                Set<String> studiengaenge = new HashSet<>();
+                for (Modul m : group) {
+                    studiengaenge.add(m.getStudiengang());
+                }
+                if (studiengaenge.size() > 1) {
+                    verzahnte.add(group.get(0).getBezeichnung());
+                }
+            }
+        }
+        return verzahnte;
+    }
+
+    private String getKuerzelBasis(String kuerzel) {
+        if (kuerzel == null || kuerzel.isEmpty()) return "";
+        int index = kuerzel.indexOf('-');
+        if (index == -1) return kuerzel;
+        return kuerzel.substring(0, index);
     }
 
     public int getAnzahlModule(String studiengang, Boolean pflicht) {
-        return 0;
+        List<Modul> modulesOfCourse = ModulesGetters.getByCourse(modules, studiengang);
+        int count = 0;
+
+        for (Modul m : modulesOfCourse) {
+            if (pflicht == null) {
+                count++;
+            } else if (pflicht && m.getArt() != null && m.getArt().contains("Pflichtmodul")) {
+                count++;
+            } else if (!pflicht && m.getArt() != null && m.getArt().contains("WPM")) {
+                count++;
+            }
+        }
+        return count;
     }
 
     public int getAnzahlVeranstaltungen(String studiengang, Boolean pflicht){
-        return 0;
+        List<Modul> modulesOfCourse = ModulesGetters.getByCourse(modules, studiengang);
+        int count = 0;
+
+        for (Modul m : modulesOfCourse) {
+            boolean match = false;
+            if (pflicht == null) {
+                match = true;
+            } else if (pflicht && m.getArt() != null && m.getArt().contains("Pflichtmodul")) {
+                match = true;
+            } else if (!pflicht && m.getArt() != null && m.getArt().contains("WPM")) {
+                match = true;
+            }
+
+            if (match) {
+                if (m.getVeranstaltungen() != null) {
+                    count += m.getVeranstaltungen().size();
+                }
+            }
+        }
+        return count;
     }
 
     public List<String> getSortierteStudiengaenge(){
-        return null;
+        Map<String, Integer> swsByCourse = new HashMap<>();
+        Set<String> allCourses = new HashSet<>();
+
+        for (Modul m : modules) {
+            allCourses.add(m.getStudiengang());
+        }
+
+        for (String course : allCourses) {
+            int totalSWS = 0;
+            List<Modul> courseModules = ModulesGetters.getByCourse(modules, course);
+            for (Modul m : courseModules) {
+                if (m.getVeranstaltungen() != null) {
+                    for (Veranstaltung v : m.getVeranstaltungen()) {
+                        totalSWS += v.getSws();
+                    }
+                }
+            }
+            swsByCourse.put(course, totalSWS);
+        }
+
+        List<String> sortedCourses = new ArrayList<>(allCourses);
+        sortedCourses.sort((c1, c2) -> {
+            int s1 = swsByCourse.get(c1);
+            int s2 = swsByCourse.get(c2);
+            if (s1 != s2) {
+                return Integer.compare(s1, s2);
+            }
+            return c1.compareTo(c2);
+        });
+
+        return sortedCourses;
     }
 
     public String getJSON(String studiengang) {
