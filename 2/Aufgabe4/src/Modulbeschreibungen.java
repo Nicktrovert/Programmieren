@@ -9,7 +9,7 @@ public class Modulbeschreibungen {
 
     public static void main(String[] args) throws IOException, ScriptException, IllegalAccessException {
         Modulbeschreibungen modB = new Modulbeschreibungen("2/Aufgabe4/src/textFile.txt");
-        System.out.println(modB.getJSON("studiengang"));
+        System.out.println(modB.getJSON("BI"));
     }
 
     public Modulbeschreibungen(String filename) throws IOException {
@@ -17,14 +17,18 @@ public class Modulbeschreibungen {
 
         for (int i = 0; i < data.size(); i++){
             List<List<String>> moduleData = new ArrayList<>();
-            while ((!data.get(i).isEmpty() || !data.get(i).get(0).isEmpty()) && i < data.size()-1){
+            while ((!data.get(i).isEmpty() && !data.get(i).get(0).isEmpty()) && i < data.size()-1){
+                if (data.get(i).get(0).startsWith("#")){
+                    continue;
+                }
                 moduleData.add(data.get(i));
                 i++;
             }
 
-            Modul a = new Modul(moduleData);
-
-            modules.add(a);
+            if (!moduleData.isEmpty()){
+                Modul a = new Modul(moduleData);
+                modules.add(a);
+            }
         }
     }
 
@@ -35,7 +39,7 @@ public class Modulbeschreibungen {
             if (!line.isEmpty() && line.charAt(0) == '#'){
                 continue;
             }
-            result.add(Arrays.asList(line.split("|")));
+            result.add(Arrays.asList(line.split("\\|")));
         }
         br.close();
         return result;
