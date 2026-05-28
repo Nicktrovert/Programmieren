@@ -18,7 +18,7 @@ public class Modulbeschreibungen {
         for (int i = 0; i < data.size(); i++){
             List<List<String>> moduleData = new ArrayList<>();
             while ((!data.get(i).isEmpty() || !data.get(i).get(0).isEmpty()) && i < data.size()-1){
-                moduleData.add(data.get(0));
+                moduleData.add(data.get(i));
                 i++;
             }
 
