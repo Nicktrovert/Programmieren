@@ -29,4 +29,14 @@ public class Modul {
     public String getPruefungsform() { return pruefungsform; }
     public String getVerantwortlicher() { return verantwortlicher; }
     public ArrayList<Veranstaltung> getVeranstaltungen() { return veranstaltungen; }
+
+    public void setBezeichnung(String bezeichnung) { this.bezeichnung = bezeichnung; }
+    public void setKuerzel(String kuerzel) { this.kuerzel = kuerzel; }
+    public void setStudiengang(String studiengang) { this.studiengang = studiengang; }
+    public void setSemester(int semester) { this.semester = semester; }
+    public void setArt(String art) { this.art = art; }
+    public void setECTS(double ects) { this.ects = ects; }
+    public void setPruefungsform(String pruefungsform) { this.pruefungsform = pruefungsform; }
+    public void setVerantwortlicher(String verantwortlicher) { this.verantwortlicher = verantwortlicher; }
+    public void setVeranstaltungen(ArrayList<Veranstaltung> veranstaltungen) { this.veranstaltungen = veranstaltungen; }
 }

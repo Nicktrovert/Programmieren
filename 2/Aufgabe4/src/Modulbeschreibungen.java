@@ -121,6 +121,21 @@ public class Modulbeschreibungen {
 
         return SWS;
     }
+    public Set<String> getVerzahnteModule() {
+        return null;
+    }
+
+    public int getAnzahlModule(String studiengang, Boolean pflicht) {
+        return 0;
+    }
+
+    public int getAnzahlVeranstaltungen(String studiengang, Boolean pflicht){
+        return 0;
+    }
+
+    public List<String> getSortierteStudiengaenge(){
+        return null;
+    }
 
     public String getJSON(String studiengang) throws ScriptException, IllegalAccessException {
         List<Modul> chosenModules = ModulesGetters.getByCourse(modules, studiengang);
