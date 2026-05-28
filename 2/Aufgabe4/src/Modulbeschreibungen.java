@@ -56,6 +56,7 @@ public class Modulbeschreibungen {
                 String[] artParts = Art.split(" ");
                 boolean readingCertificateName = false;
                 StringBuilder sb = new StringBuilder();
+
                 for (int j = 0; j < artParts.length; j++){
                     if (!readingCertificateName){
                         if (artParts[j].equals("Zertifikat")){
@@ -64,14 +65,18 @@ public class Modulbeschreibungen {
                         }
                     }
                     else {
-                        if (artParts[j].equals("und") || artParts[j].equals(",")){
+                        if (artParts[j].equals(",") || (artParts[j].equals("und") && j + 1 < artParts.length && artParts[j + 1].equals("Zertifikat"))){
                             readingCertificateName = false;
-                            certificates.add(sb.toString());
+                            certificates.add(sb.toString().trim());
                         }
                         else {
                             sb.append(artParts[j]).append(" ");
                         }
                     }
+                }
+
+                if (readingCertificateName && !sb.isEmpty()){
+                    certificates.add(sb.toString().trim());
                 }
             }
         }
