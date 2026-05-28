@@ -6,7 +6,7 @@ public class ModulesGetters {
         List<Modul> modulesOfCourse = new ArrayList<>();
 
         for (Modul m : modules){
-            if (m.getStudiengang().equals(studiengang)) {
+            if (m.getStudiengang() != null && m.getStudiengang().equals(studiengang)) {
                 modulesOfCourse.add(m);
             }
         }

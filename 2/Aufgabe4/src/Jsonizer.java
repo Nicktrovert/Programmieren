@@ -17,7 +17,7 @@ public class Jsonizer {
                 throw new RuntimeException(e);
             }
         }
-        sb.append("]\n");
+        sb.append("]");
 
         return sb.toString();
     }
