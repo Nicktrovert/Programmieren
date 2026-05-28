@@ -170,7 +170,7 @@ public class Modulbeschreibungen {
                 count++;
             } else if (pflicht && m.getArt() != null && m.getArt().contains("Pflichtmodul")) {
                 count++;
-            } else if (!pflicht && m.getArt() != null && m.getArt().contains("WPM")) {
+            } else if (!pflicht && m.getArt() != null && m.getArt().contains("Wahlpflichtmodul")) {
                 count++;
             }
         }
@@ -187,14 +187,12 @@ public class Modulbeschreibungen {
                 match = true;
             } else if (pflicht && m.getArt() != null && m.getArt().contains("Pflichtmodul")) {
                 match = true;
-            } else if (!pflicht && m.getArt() != null && m.getArt().contains("WPM")) {
+            } else if (!pflicht && m.getArt() != null && m.getArt().contains("Wahlpflichtmodul")) {
                 match = true;
             }
 
-            if (match) {
-                if (m.getVeranstaltungen() != null) {
-                    count += m.getVeranstaltungen().size();
-                }
+            if (match && m.getVeranstaltungen() != null) {
+                count += m.getVeranstaltungen().size();
             }
         }
         return count;
