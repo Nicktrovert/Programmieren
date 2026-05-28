@@ -1,15 +1,18 @@
-import static org.junit.Assert.*;
-
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.*;
-
-import org.junit.*;
+import org.junit.AssumptionViolatedException;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
 import org.junit.rules.TestName;
 import org.junit.rules.TestWatcher;
 import org.junit.rules.Timeout;
 import org.junit.runner.Description;
 import org.junit.runners.model.TestTimedOutException;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.*;
+
+import static org.junit.Assert.*;
 
 public class VorlesungsverzeichnisTest {
     String filename = "db_junit.txt";
