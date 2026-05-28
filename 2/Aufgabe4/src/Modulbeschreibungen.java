@@ -43,8 +43,83 @@ public class Modulbeschreibungen {
 
     public Set<String> getZertifikate(String studiengang){
         List<Modul> modulesOfCourse = ModulesGetters.getByCourse(modules, studiengang);
+        Set<String> certificates = new HashSet<>();
 
-        return null;
+        for (int i = 0; i < modulesOfCourse.size(); i++){
+            String Art = modulesOfCourse.get(i).getArt();
+            Art = Art.replace(",", " ,");
+            if (Art.contains("Zertifikat")){
+                String[] artParts = Art.split(" ");
+                boolean readingCertificateName = false;
+                StringBuilder sb = new StringBuilder();
+                for (int j = 0; j < artParts.length; j++){
+                    if (!readingCertificateName){
+                        if (artParts[j].equals("Zertifikat")){
+                            readingCertificateName = true;
+                            sb = new StringBuilder();
+                        }
+                    }
+                    else {
+                        if (artParts[j].equals("und") || artParts[j].equals(",")){
+                            readingCertificateName = false;
+                            certificates.add(sb.toString());
+                        }
+                        else {
+                            sb.append(artParts[j]).append(" ");
+                        }
+                    }
+                }
+            }
+        }
+
+        return certificates;
+    }
+
+    Map<Integer, Integer> getECTS(String studiengang){
+        List<Modul> modulesOfCourse = ModulesGetters.getByCourse(modules, studiengang);
+        Map<Integer, Integer> ECTS = new HashMap<>();
+
+        for (Modul m : modulesOfCourse){
+            if (m.getArt().contains("Pflichtmodul")){
+                int semester = m.getSemester();
+                int moduleECTS = (int) Math.round(m.getECTS());
+                if (!ECTS.containsKey(semester)){
+                    ECTS.put(semester, moduleECTS);
+                }
+                else{
+                    int prevValue = ECTS.get(semester);
+                    ECTS.replace(semester, moduleECTS + prevValue);
+                }
+            }
+        }
+
+        return ECTS;
+    }
+
+    Map<Integer, Integer> getSWS(String studiengang){
+        List<Modul> modulesOfCourse = ModulesGetters.getByCourse(modules, studiengang);
+        Map<Integer, Integer> SWS = new HashMap<>();
+
+        for (Modul m : modulesOfCourse){
+            if (m.getArt().contains("Pflichtmodul")){
+                int semester = m.getSemester();
+                double moduleSWS = 0;
+
+                for (Veranstaltung v : m.getVeranstaltungen()){
+                    moduleSWS += v.getSws();
+                }
+
+                if (!SWS.containsKey(semester)){
+                    SWS.put(semester, (int) moduleSWS);
+                }
+                else{
+                    int prevValue = SWS.get(semester);
+                    SWS.replace(semester, ((int) moduleSWS) + prevValue);
+                }
+            }
+        }
+
+        return SWS;
     }
 
     public String getJSON(String studiengang) throws ScriptException, IllegalAccessException {
