@@ -70,7 +70,7 @@ public class Modul {
                     sws = 0.0;
                 }
 
-                Veranstaltung v = new Veranstaltung(titel, dozenten, (int) Math.round(sws));
+                Veranstaltung v = new Veranstaltung(titel, dozenten, sws);
                 this.veranstaltungen.add(v);
             }
         }

@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="updddddateeeee2">
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe4/src/Veranstaltung.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe4/src/Veranstaltung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe4/src/Modul.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe4/src/Modul.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779987668173</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="updddddateeeee2">
+      <option name="closed" value="true" />
+      <created>1780039521594</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1780039521594</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
