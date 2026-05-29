@@ -3,7 +3,7 @@ public class Veranstaltung {
     private String dozenten;
     private double sws;
 
-    public Veranstaltung(String titel, String dozenten, int sws){
+    public Veranstaltung(String titel, String dozenten, double sws){
         this.titel = titel;
         this.dozenten = dozenten;
         this.sws = sws;
