@@ -30,22 +30,14 @@ public class Modul {
 
         if (header.size() > 3) {
             String semStr = header.get(3);
-            try {
-                this.semester = Integer.parseInt(semStr);
-            } catch (NumberFormatException e) {
-                this.semester = 0;
-            }
+            this.semester = Integer.parseInt(semStr);
         }
 
         if (header.size() > 4) this.art = header.get(4);
 
         if (header.size() > 5) {
             String ectsStr = header.get(5).replace(',', '.');
-            try {
-                this.ects = Double.parseDouble(ectsStr);
-            } catch (NumberFormatException e) {
-                this.ects = 0.0;
-            }
+            this.ects = Double.parseDouble(ectsStr);
         }
 
         if (header.size() > 6) this.pruefungsform = header.get(6);
@@ -63,12 +55,9 @@ public class Modul {
                 String dozenten = eventLine.get(1);
 
                 double sws = 0.0;
-                try {
-                    String swsStr = eventLine.get(2).replace(',', '.');
-                    sws = Double.parseDouble(swsStr);
-                } catch (NumberFormatException e) {
-                    sws = 0.0;
-                }
+
+                String swsStr = eventLine.get(2).replace(',', '.');
+                sws = Double.parseDouble(swsStr);
 
                 Veranstaltung v = new Veranstaltung(titel, dozenten, sws);
                 this.veranstaltungen.add(v);
