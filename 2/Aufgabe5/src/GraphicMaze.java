@@ -20,16 +20,15 @@ public class GraphicMaze extends JFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         char[][] mazeData = {
-                {'#', ' ', '#', ' ', ' ', '#', '#'},
-                {'#', ' ', '#', ' ', '#', ' ', '#'},
-                {'#', ' ', ' ', ' ', ' ', ' ', '#'},
-                {'#', '#', '#', '#', '#', ' ', '#'},
-                {'#', ' ', ' ', ' ', ' ', ' ', '#'},
-                {'#', ' ', '#', '#', '#', '#', '#'},
-                {'#', ' ', ' ', ' ', ' ', ' ', ' '},
+                {' ', '#', ' ', '#', ' ', ' '},
+                {' ', '#', ' ', ' ', ' ', '#'},
+                {' ', ' ', '#', '#', ' ', '#'},
+                {'#', ' ', ' ', ' ', ' ', '#'},
+                {' ', ' ', ' ', '#', ' ', '#'},
+                {'#', '#', ' ', ' ', ' ', ' '},
         };
 
-        frame.m = frame.g.SolveMaze(mazeData, new Point(1, 0));
+        frame.m = frame.g.SolveMaze(mazeData, new Point(0, 0));
 
         frame.g.drawMaze(frame.g, frame.m);
         frame.g.drawSolution(frame.g, frame.m);

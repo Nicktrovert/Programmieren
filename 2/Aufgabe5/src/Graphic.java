@@ -53,9 +53,9 @@ public class Graphic extends JPanel {
 		for (int i = 0; i <= m.maze.length; i++) {
 			int pos = i * cell_size;
 
-			g.drawLine(0, pos, size+6, pos);
+			g.drawLine(0, pos, size, pos);
 
-			g.drawLine(pos, 0, pos, size+6);
+			g.drawLine(pos, 0, pos, size);
 		}
 
 		g.redraw();

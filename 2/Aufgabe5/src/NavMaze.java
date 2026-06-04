@@ -60,16 +60,15 @@ public class NavMaze extends JFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         char[][] mazeData = {
-                {'#', ' ', '#', ' ', ' ', '#', '#'},
-                {'#', ' ', '#', ' ', '#', ' ', '#'},
-                {'#', ' ', ' ', ' ', ' ', ' ', '#'},
-                {'#', '#', '#', '#', '#', ' ', '#'},
-                {'#', ' ', ' ', ' ', ' ', ' ', '#'},
-                {'#', ' ', '#', '#', '#', '#', '#'},
-                {'#', ' ', ' ', ' ', ' ', ' ', ' '},
+                {' ', '#', ' ', '#', ' ', ' '},
+                {' ', '#', ' ', ' ', ' ', '#'},
+                {' ', ' ', '#', '#', ' ', '#'},
+                {'#', ' ', ' ', ' ', ' ', '#'},
+                {' ', ' ', ' ', '#', ' ', '#'},
+                {'#', '#', ' ', ' ', ' ', ' '},
         };
 
-        frame.m = frame.g.SolveMaze(mazeData, new Point(1, 0));
+        frame.m = frame.g.SolveMaze(mazeData, new Point(0, 0));
 
         frame.redrawScene();
     }
