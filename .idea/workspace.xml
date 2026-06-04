@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="tis draws stuff ++">
+    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="tis draws stuff +++">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/Graphic.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Graphic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicMaze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/NavMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/NavMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780595528857</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="tis draws stuff +++">
+      <option name="closed" value="true" />
+      <created>1780595838426</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1780595838426</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +384,8 @@
     <MESSAGE value="tis draws stuff" />
     <MESSAGE value="tis draws stuff +" />
     <MESSAGE value="tis draws stuff ++" />
-    <option name="LAST_COMMIT_MESSAGE" value="tis draws stuff ++" />
+    <MESSAGE value="tis draws stuff +++" />
+    <option name="LAST_COMMIT_MESSAGE" value="tis draws stuff +++" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
