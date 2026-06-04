@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="zwischen commit">
+    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="tis draws stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicMaze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Maze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +111,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.GraphicMaze.executor": "Run",
+    "Application.GraphicTest.executor": "Run",
+    "Application.GraphicTest2.executor": "Run",
     "Application.Modulbeschreibungen.executor": "Run",
     "Application.SomeTesting.executor": "Run",
     "Application.Test.executor": "Run",
@@ -320,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780590832106</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="tis draws stuff">
+      <option name="closed" value="true" />
+      <created>1780592064523</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1780592064523</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +356,8 @@
     <MESSAGE value="updddddateeeee2" />
     <MESSAGE value="Files" />
     <MESSAGE value="zwischen commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="zwischen commit" />
+    <MESSAGE value="tis draws stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="tis draws stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

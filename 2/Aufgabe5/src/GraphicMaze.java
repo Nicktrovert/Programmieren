@@ -22,13 +22,13 @@ public class GraphicMaze extends JFrame {
                 else {
                     g.setColor(Color.WHITE);
                 }
-                g.fillRect(j * cell_size, i*cell_size, cell_size, cell_size);
+                g.fillRect(j * cell_size, i*cell_size, cell_size+4, cell_size+4);
             }
         }
 
         for (Point p : this.m.solution){
             g.setColor(Color.BLUE);
-            g.fillOval(p.x * cell_size, p.y * cell_size, cell_size, cell_size);
+            g.fillOval(2+p.x * cell_size + cell_size/4, 2+p.y * cell_size + cell_size/4, cell_size/2, cell_size/2);
         }
 
         g.redraw();
@@ -40,6 +40,7 @@ public class GraphicMaze extends JFrame {
         frame.setTitle("GraphicMaze");
         frame.pack();
         frame.setVisible(true);
+        frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         char[][] mazeData = {
