@@ -6,8 +6,6 @@ public class Maze {
 
 	char[][] maze;
 	public List<Point> solution = new ArrayList<Point>();
-	public List<Point> walls = new ArrayList<Point>();
-	public List<Point> floor = new ArrayList<Point>();
 	
 	public Maze(char[][] maze) {
 		this.maze = maze;
@@ -21,7 +19,6 @@ public class Maze {
 			return false;
 		
 		if (maze[i][j] != ' '){
-			walls.add(new Point(i, j));
 			return false;
 		}
 
@@ -31,11 +28,9 @@ public class Maze {
 			|| canExit(i+1, j) || canExit(i, j+1)
 			|| canExit(i-1, j) || canExit(i, j-1)) {
 			maze[i][j] = '+';
-			solution.addFirst(new Point(i, j));
+			solution.addFirst(new Point(j, i));
 			return true;
 		}
-
-		floor.add(new Point(i, j));
 		
 		return false;
 		

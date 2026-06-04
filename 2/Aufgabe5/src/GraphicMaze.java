@@ -1,35 +1,37 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.List;
 
 public class GraphicMaze extends JFrame {
-    private Graphic graphic;
-    private Maze maze;
+    private Graphic g;
+    private Maze m;
 
     public GraphicMaze(int width, int height) {
-        graphic = new Graphic(width, height);
-        add(graphic);
+        g = new Graphic(width, height);
+        add(g);
     }
 
     public void drawMaze(){
-        int cell_size = 30;
+        int cell_size = g.width / m.maze.length;
 
-        for (Point p : this.maze.floor){
-            graphic.setColor(Color.WHITE);
-            graphic.fillRect(p.x * cell_size, p.y * cell_size, cell_size, cell_size);
+        for (int i = 0; i < m.maze.length; i++){
+            for (int j = 0; j < m.maze[i].length; j++){
+                char x = m.maze[i][j];
+                if (x == '#'){
+                    g.setColor(Color.BLACK);
+                }
+                else {
+                    g.setColor(Color.WHITE);
+                }
+                g.fillRect(j * cell_size, i*cell_size, cell_size, cell_size);
+            }
         }
 
-        for (Point p : this.maze.walls){
-            graphic.setColor(Color.BLACK);
-            graphic.fillRect(p.x * cell_size, p.y * cell_size, cell_size, cell_size);
+        for (Point p : this.m.solution){
+            g.setColor(Color.BLUE);
+            g.fillOval(p.x * cell_size, p.y * cell_size, cell_size, cell_size);
         }
 
-        for (Point p : this.maze.solution){
-            graphic.setColor(Color.BLUE);
-            graphic.fillOval(p.x * cell_size, p.y * cell_size, cell_size, cell_size);
-        }
-
-        graphic.redraw();
+        g.redraw();
     }
 
     public static void main(String[] args){
@@ -41,14 +43,17 @@ public class GraphicMaze extends JFrame {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         char[][] mazeData = {
-                {' ', '#', ' ', ' '},
-                {' ', '#', ' ', '#'},
-                {' ', ' ', ' ', '#'},
-                {'#', '#', ' ', ' '}
+                {'#', ' ', '#', ' ', ' ', '#', '#'},
+                {'#', ' ', '#', ' ', '#', ' ', '#'},
+                {'#', ' ', ' ', ' ', ' ', ' ', '#'},
+                {'#', '#', '#', '#', '#', ' ', '#'},
+                {'#', ' ', ' ', ' ', ' ', ' ', '#'},
+                {'#', ' ', '#', '#', '#', '#', '#'},
+                {'#', ' ', ' ', ' ', ' ', ' ', ' '},
         };
 
-        frame.maze = new Maze(mazeData);
-        frame.maze.canExit(0, 0);
+        frame.m = new Maze(mazeData);
+        frame.m.canExit(0, 1);
 
         frame.drawMaze();
     }
