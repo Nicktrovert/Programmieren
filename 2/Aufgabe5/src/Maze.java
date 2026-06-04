@@ -24,7 +24,7 @@ public class Maze {
 
 		maze[i][j] = '.';
 		
-		if ((i == n-1 && j == n-1) 
+		if ((i == n-1 && j == n-1)
 			|| canExit(i+1, j) || canExit(i, j+1)
 			|| canExit(i-1, j) || canExit(i, j-1)) {
 			maze[i][j] = '+';

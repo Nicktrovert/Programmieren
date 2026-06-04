@@ -18,6 +18,82 @@ public class Graphic extends JPanel {
 		this.width = width;
 		this.height = height;
 	}
+
+	public Maze SolveMaze(char[][] mazeData, Point starting_point){
+		Maze maze = new Maze(mazeData);
+		maze.canExit(starting_point.y, starting_point.x);
+
+		return maze;
+	}
+
+	public void drawMaze(Graphic g, Maze m){
+		drawMaze(g, m, false);
+	}
+
+	public void drawMaze(Graphic g, Maze m, boolean draw_solution){
+		int cell_size = g.width / m.maze.length;
+
+		for (int i = 0; i < m.maze.length; i++){
+			for (int j = 0; j < m.maze[i].length; j++){
+				char x = m.maze[i][j];
+				if (x == '#'){
+					g.setColor(Color.BLACK);
+				}
+				else {
+					g.setColor(Color.WHITE);
+				}
+				g.fillRect(j * cell_size, i*cell_size, cell_size+4, cell_size+4);
+			}
+		}
+
+		g.setColor(Color.BLACK);
+
+		int size = m.maze.length * cell_size;
+
+		for (int i = 0; i <= m.maze.length; i++) {
+			int pos = i * cell_size;
+
+			g.drawLine(0, pos, size+6, pos);
+
+			g.drawLine(pos, 0, pos, size+6);
+		}
+
+		g.redraw();
+
+		if (draw_solution){
+			drawSolution(g, m);
+		}
+	}
+
+	public void drawSolution(Graphic g, Maze m){
+		int cell_size = g.width / m.maze.length;
+
+		for (int i = 0; i < m.solution.size(); i++){
+			Point p = m.solution.get(i);
+
+			int colorStep = 255 / m.solution.size();
+			int blue = colorStep*i;
+
+			g.setColor(new Color(0, 0, blue));
+			g.fillOval(2+p.x * cell_size + cell_size/4, 2+p.y * cell_size + cell_size/4, cell_size/2, cell_size/2);
+		}
+
+		g.redraw();
+	}
+
+	public void drawSolution(Graphic g, Maze m, int index){
+		int cell_size = g.width / m.maze.length;
+
+		if (index < 0 || index >= m.solution.size()){
+			return;
+		}
+
+		Point p = m.solution.get(index);
+
+		g.setColor(Color.BLUE);
+
+		g.fillOval(2+p.x * cell_size + cell_size/4, 2+p.y * cell_size + cell_size/4, cell_size/2, cell_size/2);
+	}
 	
 	public Dimension getPreferredSize() {
 		return new Dimension(width, height);

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="tis draws stuff">
+    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="tis draws stuff +">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/Graphic.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Graphic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/NavMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/NavMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +117,7 @@
     "Application.GraphicTest.executor": "Run",
     "Application.GraphicTest2.executor": "Run",
     "Application.Modulbeschreibungen.executor": "Run",
+    "Application.NavMaze.executor": "Run",
     "Application.SomeTesting.executor": "Run",
     "Application.Test.executor": "Run",
     "Application.TestFrame.executor": "Run",
@@ -329,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780592064523</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="tis draws stuff +">
+      <option name="closed" value="true" />
+      <created>1780592369242</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1780592369242</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +369,8 @@
     <MESSAGE value="Files" />
     <MESSAGE value="zwischen commit" />
     <MESSAGE value="tis draws stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="tis draws stuff" />
+    <MESSAGE value="tis draws stuff +" />
+    <option name="LAST_COMMIT_MESSAGE" value="tis draws stuff +" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
