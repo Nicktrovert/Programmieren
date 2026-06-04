@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="updddddateeeee2">
-      <change afterPath="$PROJECT_DIR$/2/Aufgabe5/Aufgabe5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Graphic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicMaze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Maze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/Aufgabe5/src/NavMaze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="Files">
+      <change afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe2/Aufgabe2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe2/Aufgabe2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/GraphicMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Maze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,73 +32,73 @@
     &quot;assignee&quot;: &quot;g3r30n&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Nicktrovert/Programmieren.git",
-    "accountId": "70749725-8d3a-479f-97d0-2d0514b21663"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nicktrovert/Programmieren.git&quot;,
+    &quot;accountId&quot;: &quot;70749725-8d3a-479f-97d0-2d0514b21663&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.00012665568766" />
-      <entry key="MS500" value="1.283910218049038" />
-      <entry key="S2" value="3.3552381886150093" />
-      <entry key="S5" value="5.416771517295768" />
-      <entry key="S10" value="6.926383922200763" />
-      <entry key="S30" value="10.633295405828832" />
-      <entry key="S60" value="13.347041464663407" />
-      <entry key="M2" value="15.582012118822274" />
-      <entry key="M5" value="17.442117451058085" />
-      <entry key="M10" value="18.7744710665958" />
-      <entry key="M15" value="22.694754548231174" />
-      <entry key="M30" value="50.577020853884456" />
-      <entry key="H1" value="107.81351940638966" />
-      <entry key="H2" value="168.37123354772834" />
-      <entry key="H4" value="212.93272294970797" />
-      <entry key="D1" value="260.22148498376083" />
-      <entry key="W1" value="269.4308377946957" />
+      <entry key="MS100" value="2.0257376807866736" />
+      <entry key="MS500" value="5.2076575929311035" />
+      <entry key="S2" value="9.77845910535855" />
+      <entry key="S5" value="13.435097676498215" />
+      <entry key="S10" value="17.018192675815026" />
+      <entry key="S30" value="26.227640038163926" />
+      <entry key="S60" value="36.06119876795906" />
+      <entry key="M2" value="51.824193280755495" />
+      <entry key="M5" value="85.30481416874133" />
+      <entry key="M10" value="115.88618205201806" />
+      <entry key="M15" value="133.5105169267337" />
+      <entry key="M30" value="173.53517425317378" />
+      <entry key="H1" value="237.57213652599472" />
+      <entry key="H2" value="306.88891362966115" />
+      <entry key="H4" value="359.7959713693258" />
+      <entry key="D1" value="417.6010238413038" />
+      <entry key="W1" value="429.0443821835452" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="8.27067563937442E-139" />
-      <entry key="MS500" value="2.418288985365933E-28" />
-      <entry key="S2" value="1.2470304248243907E-7" />
-      <entry key="S5" value="0.001731214256239977" />
-      <entry key="S10" value="0.04160786291363661" />
-      <entry key="S30" value="0.3465174714126035" />
-      <entry key="S60" value="0.5886573463506622" />
-      <entry key="M2" value="0.7672400839314549" />
-      <entry key="M5" value="0.899836941617717" />
-      <entry key="M10" value="1.090709026399785" />
-      <entry key="M15" value="2.0526981217538034" />
-      <entry key="M30" value="9.643178091378472" />
-      <entry key="H1" value="25.8285716701065" />
-      <entry key="H2" value="43.227047382329786" />
-      <entry key="H4" value="56.12155296679681" />
-      <entry key="D1" value="69.86169822115721" />
-      <entry key="W1" value="72.54298371760062" />
+      <entry key="MS100" value="2.764012748546903E-45" />
+      <entry key="MS500" value="1.2254852441422436E-9" />
+      <entry key="S2" value="0.006060336814068884" />
+      <entry key="S5" value="0.17488949457478595" />
+      <entry key="S10" value="0.768312042409867" />
+      <entry key="S30" value="3.2144148973139415" />
+      <entry key="S60" value="5.444647335666098" />
+      <entry key="M2" value="7.744601239357438" />
+      <entry key="M5" value="11.0200004353507" />
+      <entry key="M10" value="13.50521861163863" />
+      <entry key="M15" value="15.14234561683089" />
+      <entry key="M30" value="21.953990396424892" />
+      <entry key="H1" value="37.37563635359029" />
+      <entry key="H2" value="55.73151948877262" />
+      <entry key="H4" value="70.19635548842696" />
+      <entry key="D1" value="86.25122897375361" />
+      <entry key="W1" value="89.45230745706091" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9461482700017914" />
-      <entry key="MS500" value="1.1864972233890336" />
-      <entry key="S2" value="3.065020632272794" />
-      <entry key="S5" value="5.174269728321567" />
-      <entry key="S10" value="6.793349087475187" />
-      <entry key="S30" value="10.874200026899672" />
-      <entry key="S60" value="13.86682640607434" />
-      <entry key="M2" value="16.30903549601832" />
-      <entry key="M5" value="18.32416516281885" />
-      <entry key="M10" value="19.855208721186163" />
-      <entry key="M15" value="24.73752986009409" />
-      <entry key="M30" value="60.202878584189875" />
-      <entry key="H1" value="133.6205393071135" />
-      <entry key="H2" value="211.58064481649353" />
-      <entry key="H4" value="269.042927490958" />
-      <entry key="D1" value="330.0808436433158" />
-      <entry key="W1" value="341.97347481274096" />
+      <entry key="MS100" value="1.9727596806002583" />
+      <entry key="MS500" value="5.138020371588795" />
+      <entry key="S2" value="9.563384881962671" />
+      <entry key="S5" value="13.31826326725116" />
+      <entry key="S10" value="17.460136005896665" />
+      <entry key="S30" value="29.111445057735203" />
+      <entry key="S60" value="41.21833351046638" />
+      <entry key="M2" value="59.34038469836696" />
+      <entry key="M5" value="96.17284579328438" />
+      <entry key="M10" value="129.28940353944816" />
+      <entry key="M15" value="148.57450856034885" />
+      <entry key="M30" value="195.43563303534776" />
+      <entry key="H1" value="274.90768157484365" />
+      <entry key="H2" value="362.5928493323334" />
+      <entry key="H4" value="429.97561508881864" />
+      <entry key="D1" value="503.84893195616377" />
+      <entry key="W1" value="518.4962000367094" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -118,8 +112,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.GraphicMaze.executor": "Run",
     "Application.Modulbeschreibungen.executor": "Run",
     "Application.SomeTesting.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.TestFrame.executor": "Run",
+    "Application.Unnamed.executor": "Run",
     "Application.Vorlesungsverzeichnis.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.All in Aufgabe4.executor": "Run",
@@ -152,6 +150,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "terminal",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -164,10 +163,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="SomeTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SomeTesting" />
-      <module name="Aufgabe4" />
+  <component name="RunManager" selected="Application.TestFrame">
+    <configuration name="TestFrame" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="DISPLAY" value=":0" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="TestFrame" />
+      <module name="Aufgabe5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,11 +192,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.TestFrame" />
+      <item itemvalue="JUnit.All in Aufgabe4" />
+      <item itemvalue="JUnit.All in Programmieren" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Aufgabe4" />
         <item itemvalue="JUnit.All in Programmieren" />
-        <item itemvalue="Application.SomeTesting" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +220,10 @@
       <option name="presentableId" value="Default" />
       <updated>1776196195597</updated>
       <workItem from="1779990796125" duration="67000" />
-      <workItem from="1780502070807" duration="418000" />
+      <workItem from="1780502070807" duration="1165000" />
+      <workItem from="1780588486993" duration="1366000" />
+      <workItem from="1780589951368" duration="72000" />
+      <workItem from="1780590232095" duration="581000" />
     </task>
     <task id="LOCAL-00001" summary="terrible">
       <option name="closed" value="true" />
@@ -294,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780039521594</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Files">
+      <option name="closed" value="true" />
+      <created>1780502616658</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1780502616659</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +338,8 @@
     <MESSAGE value="Probably correct" />
     <MESSAGE value="updddddateeeee" />
     <MESSAGE value="updddddateeeee2" />
-    <option name="LAST_COMMIT_MESSAGE" value="updddddateeeee2" />
+    <MESSAGE value="Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
