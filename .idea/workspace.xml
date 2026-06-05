@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="tis draws stuff +++">
+    <list default="true" id="51475409-8cd9-4586-886d-4b02ce89d07c" name="Changes" comment="removed an import">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/Aufgabe5/src/NavMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/2/Aufgabe5/src/NavMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +30,12 @@
     &quot;assignee&quot;: &quot;g3r30n&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Nicktrovert/Programmieren.git",
-    "accountId": "0ea381d2-e207-43bf-8b47-672bade3e62e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nicktrovert/Programmieren.git&quot;,
+    &quot;accountId&quot;: &quot;0ea381d2-e207-43bf-8b47-672bade3e62e&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -108,54 +108,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GraphicMaze.executor": "Run",
-    "Application.GraphicTest.executor": "Run",
-    "Application.GraphicTest2.executor": "Run",
-    "Application.Modulbeschreibungen.executor": "Run",
-    "Application.NavMaze.executor": "Run",
-    "Application.SomeTesting.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.TestFrame.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "Application.Vorlesungsverzeichnis.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.All in Aufgabe4.executor": "Run",
-    "JUnit.All in Programmieren.executor": "Run",
-    "JUnit.VorlesungsverzeichnisSlopTest.executor": "Run",
-    "JUnit.VorlesungsverzeichnisTest.executor": "Run",
-    "JUnit.VorlesungsverzeichnisTest.testSingleLecture.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main",
-    "git.auto.fetch.suggestion.counter": "1",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/nocturnal/IdeaProjects/Programmieren",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/gereon/IdeaProjects/Programmieren/2/Aufgabe4/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "terminal",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GraphicMaze.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GraphicTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GraphicTest2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Modulbeschreibungen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NavMaze.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SomeTesting.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestFrame.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Vorlesungsverzeichnis.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.All in Aufgabe4.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Programmieren.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VorlesungsverzeichnisSlopTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VorlesungsverzeichnisTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VorlesungsverzeichnisTest.testSingleLecture.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;1&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nocturnal/IdeaProjects/Programmieren&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/gereon/IdeaProjects/Programmieren/2/Aufgabe4/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IntelliJ_Projects\Programmieren\2\Aufgabe4\Tests" />
@@ -164,7 +164,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestFrame">
     <configuration name="TestFrame" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -354,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780595838426</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="removed an import">
+      <option name="closed" value="true" />
+      <created>1780595895575</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1780595895575</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +393,8 @@
     <MESSAGE value="tis draws stuff +" />
     <MESSAGE value="tis draws stuff ++" />
     <MESSAGE value="tis draws stuff +++" />
-    <option name="LAST_COMMIT_MESSAGE" value="tis draws stuff +++" />
+    <MESSAGE value="removed an import" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed an import" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

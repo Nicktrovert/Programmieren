@@ -12,7 +12,7 @@ public class Maze {
 	}
 
 	public boolean canExit(int i, int j) {
-		
+
 		int n = maze.length;
 		
 		if (i < 0 || j < 0 || i >= n || j >= n)
